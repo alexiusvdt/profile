@@ -1,3 +1,12 @@
+## My portfolio
+TODO
+~~* bootstrap it~~
+* set up component framework
+* establish page control
+* ... some other stuff
+* host it
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
