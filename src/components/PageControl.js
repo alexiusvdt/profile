@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import WelcomeSplash from './WelcomeSplash';
 import MainPage from './MainPage';
 
+
 function PageControl() {
+  //this means splash is going to display on every render, find a one-time method
   const [welcomeVisibleOnPage, setWelcomeVisibleOnPage] = useState(true);
+
 
 const handleClick = () => {
   setWelcomeVisibleOnPage(false)
