@@ -7,6 +7,10 @@ TODO
 * host it
 
 
+## Uses
+holderjs for placeholder images (included in bootstrap already...oops!)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
