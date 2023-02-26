@@ -1,31 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import WelcomeSplash from './WelcomeSplash';
-import MainPage from './MainPage';
+// import MainPage from './MainPage';
 
 
 function PageControl() {
-  //this means splash is going to display on every render, find a one-time method
-  const [welcomeVisibleOnPage, setWelcomeVisibleOnPage] = useState(true);
+// set up a useEffect for branching conditionals.
+// if loading, return loading image
+// if not loading & on home feed first image
 
+  let currentlyVisibleState = "placeholder state";
+  let buttonText = "bottom text";
 
-const handleClick = () => {
-  setWelcomeVisibleOnPage(false)
-}
-  let currentlyVisibleState = null;
-  let buttonText = null;
-
-  if(welcomeVisibleOnPage){
-    currentlyVisibleState = <WelcomeSplash />
-    buttonText = "Come take a look!";
-  } else if(!welcomeVisibleOnPage){
-    currentlyVisibleState = <MainPage />
-    buttonText = "this is a button";
-  }
+  // if(welcomeVisibleOnPage){
+  //   currentlyVisibleState = <WelcomeSplash />
+  //   buttonText = "Come take a look!";
+  // } else if(!welcomeVisibleOnPage){
+  //   currentlyVisibleState = <MainPage />
+  //   buttonText = "this is a button";
+  // }
 
   return (
     <React.Fragment>
       {currentlyVisibleState}
-      {<button onClick={handleClick}>{buttonText}</button>} 
+      {/* {<button onClick={handleClick}>{buttonText}</button>}  */}
     </React.Fragment>
   );
 }

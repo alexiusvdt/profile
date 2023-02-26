@@ -5,7 +5,7 @@ import styled from "styled-components";
 function Header() {
 // styling goes here
 const Div1 = styled.div`
-  background-color: #708090;
+  background-color: #747474;
 `
 const StyledLink = styled(Link)`
   color: #fff;
@@ -62,6 +62,7 @@ const H1 = styled.h1`
       <H1>Alex Johnson's Portfolio</H1>
         <span><P>|<StyledLink to="/">Home</StyledLink> | 
         <StyledLink to="/projects">Projects</StyledLink> | 
+        <StyledLink to="/my-skills">My Skills</StyledLink> |
         <StyledLink to="/contact-me">Contact Me</StyledLink> |</P>
         </span>
       </Div1>

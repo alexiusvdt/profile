@@ -7,8 +7,8 @@ TODO
 * host it
 
 
-## Uses
-holderjs for placeholder images (included in bootstrap already...oops!)
+## Look into:
+Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
 
 
 # Getting Started with Create React App
