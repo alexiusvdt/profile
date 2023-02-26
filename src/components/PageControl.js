@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-// import MainPage from './MainPage';
+import Socials from './Socials';
 
 
 function PageControl() {
+  const [isHome, setIsHome] = useState(true);
+
 // set up a useEffect for branching conditionals.
 // if loading, return loading image
 // if not loading & on home feed first image
@@ -17,13 +19,12 @@ function PageControl() {
   //   currentlyVisibleState = <MainPage />
   //   buttonText = "this is a button";
   // }
-
-  return (
-    <React.Fragment>
-      {currentlyVisibleState}
-      {/* {<button onClick={handleClick}>{buttonText}</button>}  */}
-    </React.Fragment>
-  );
+  if(isHome)
+    return (
+      <React.Fragment>      
+        <Socials />
+      </React.Fragment>
+    );
 }
 
 export default PageControl;
