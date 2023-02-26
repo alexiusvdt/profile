@@ -10,6 +10,11 @@ TODO
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
 
+## New tech:
+material ui - `npm install @mui/material @emotion/react @emotion/styled`
+`npm install @mui/material @mui/styled-engine-sc styled-components` (if using styled components)
+`npm install @mui/icons-material`
+
 
 # Getting Started with Create React App
 
