@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { 
-  IconGitHub,
-  IconInstagram,
-  IconLinkedin,
-} from './icons';
+import { IconButton } from '@mui/material';
+// import { IconGitHub, IconInstagram, IconLinkedin} from '../icons/';
+import {IconGithub} from './IconGitHub';
+import {IconInstagram} from './IconInstagram';
+import {IconLinkedin} from './IconLinkedin';
 
 export const Icon = ({ name }) => {
   switch (name) {

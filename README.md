@@ -11,7 +11,8 @@ TODO
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |1730 | begin capstone reproposal|
-  |1800 | continue reading Material UI docs & try to figure out compilation error|
+  | 1800 | continue reading Material UI docs & try to figure out compilation error|
+  |1845| trying to split into individual imports, still trying to fix. maybe push this off til later/ consider simplifying and then upgrading later|
 
 
 
