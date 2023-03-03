@@ -15,7 +15,10 @@ TODO
   |1845| trying to split into individual imports, still trying to fix. maybe push this off til later/ consider simplifying and then upgrading later|
   |1930|wrap up/eod commits, still WIP on same error, re-imagining components|
 
-
+  2023/03/03
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |0800|initial morning commit & begin redesign|  
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
