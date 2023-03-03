@@ -20,10 +20,13 @@ TODO
   |:-----:|:--------------------------------------------------------------------|
   |0800|initial morning commit & begin redesign|  
   |0900|reading into typescript|
-  |0959|continue typescript and design research, dont forget to add in references|
+  |0959|continue typescript and design research|
+  |1101|design research & reading docs for gatsby/MUI|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
+[typescript tutorial in progress](https://www.youtube.com/watch?v=30LWjhZzg50)
+[material ui docs](https://mui.com/material-ui/)
 
 ## New tech:
 material ui - `npm install @mui/material @emotion/react @emotion/styled`
