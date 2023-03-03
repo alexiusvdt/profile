@@ -22,6 +22,7 @@ TODO
   |0900|reading into typescript|
   |0959|continue typescript and design research|
   |1101|design research & reading docs for gatsby/MUI|
+  |1200| break for lunch|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
