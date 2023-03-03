@@ -19,6 +19,7 @@ TODO
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |0800|initial morning commit & begin redesign|  
+  |0900|reading into typescript|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
