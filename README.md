@@ -20,6 +20,7 @@ TODO
   |:-----:|:--------------------------------------------------------------------|
   |0800|initial morning commit & begin redesign|  
   |0900|reading into typescript|
+  |0959|continue typescript and design research, dont forget to add in references|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
