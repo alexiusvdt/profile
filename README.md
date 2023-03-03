@@ -26,6 +26,8 @@ TODO
   |1300|back from lunch, return to docs study|
   |1400|continue docs study, looking into animation/scroll effects next|
   |1455| Still reading reactjs/react transitions|
+  |1500| continuing react transitions |
+  |1600| back to design decisions & researching |
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
