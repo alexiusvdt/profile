@@ -50,8 +50,7 @@ Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-co
 material ui - `npm install @mui/material @emotion/react @emotion/styled`
 `npm install @mui/material @mui/styled-engine-sc styled-components` (if using styled components)
 `npm install @mui/icons-material`
-`npm install nodemailer` nodemailer
-
+`npm install @emailjs/browser --save` emailjs
 
 
 

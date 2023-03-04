@@ -41,7 +41,6 @@ const renderCard = (projects, i) => {
   )
 }
 
-
 function Projects(){
   return (
     <>
