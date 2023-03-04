@@ -18,22 +18,24 @@ TODO
   2023/03/03
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
-  |0800|initial morning commit & begin redesign|  
-  |0900|reading into typescript|
-  |0959|continue typescript and design research|
-  |1101|design research & reading docs for gatsby/MUI|
+  |0800| initial morning commit & begin redesign|  
+  |0900| reading into typescript|
+  |0959| continue typescript and design research|
+  |1101| design research & reading docs for gatsby/MUI|
   |1200| break for lunch|
-  |1300|back from lunch, return to docs study|
-  |1400|continue docs study, looking into animation/scroll effects next|
+  |1300| back from lunch, return to docs study|
+  |1400| continue docs study, looking into animation/scroll effects next|
   |1455| Still reading reactjs/react transitions|
   |1500| continuing react transitions |
   |1600| back to design decisions & researching |
-  |1700|break for dinner/eod|
+  |1700| break for dinner/eod|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
 [typescript tutorial in progress](https://www.youtube.com/watch?v=30LWjhZzg50)
 [material ui docs](https://mui.com/material-ui/)
+[react spring](https://www.react-spring.dev/)
+[reactjs](https://reactjs.org/docs/getting-started.html)
 
 ## New tech:
 material ui - `npm install @mui/material @emotion/react @emotion/styled`
