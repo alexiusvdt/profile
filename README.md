@@ -44,11 +44,13 @@ Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-co
 [material ui docs](https://mui.com/material-ui/)
 [react spring](https://www.react-spring.dev/)
 [reactjs](https://reactjs.org/docs/getting-started.html)
+[contact form](https://w3collective.com/react-contact-form/)
 
 ## New tech:
 material ui - `npm install @mui/material @emotion/react @emotion/styled`
 `npm install @mui/material @mui/styled-engine-sc styled-components` (if using styled components)
 `npm install @mui/icons-material`
+`npm install nodemailer` nodemailer
 
 
 
