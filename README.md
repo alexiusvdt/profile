@@ -46,6 +46,10 @@ Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-co
 [reactjs](https://reactjs.org/docs/getting-started.html)
 [contact form](https://w3collective.com/react-contact-form/)
 
+## notes/reminders:
+* .env must be in the root folder & vars prefixed with REACT_APP_
+
+
 ## New tech:
 material ui - `npm install @mui/material @emotion/react @emotion/styled`
 `npm install @mui/material @mui/styled-engine-sc styled-components` (if using styled components)
