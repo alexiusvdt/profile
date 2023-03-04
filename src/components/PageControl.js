@@ -22,7 +22,7 @@ function PageControl() {
   if(isHome)
     return (
       <React.Fragment>      
-        <Socials />
+        {/* <Socials /> */}
       </React.Fragment>
     );
 }
