@@ -34,6 +34,8 @@ TODO
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |0900|morning commit|
+  |morning| see hrly progress|
+  |1300|back from lunch|
 
 
 ## Look into:
