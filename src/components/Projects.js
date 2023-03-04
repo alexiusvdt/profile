@@ -1,47 +1,46 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { projects } from '../config';
-import styled from "styled-components";
+// import styled from "styled-components";
 
-const StyledList = styled.ul`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+const CardBox = {
+  width: '18rem',
+  backgroundColor: "#ffffff",
+  borderRadius: "10px 10px 10px 10px",
+  overflow: "Hidden",
+  height: "200px",
+  maxHeight: "35vh",
+  webkitBoxShadow: "0px 12px 18px -6px rgba(0,0,0,0.3)",
+  boxShadow: "0px 12px 18px -6px rgba(0,0,0,0.3)"
+}
 
-  li {
-    padding: 5px;
-    &: last-of-type {
-      // margin-bottom: 10px;
-    }
+const CardGrid = {
 
-    a {
-      padding: 5px;
-      &: hover,
-      &: focus {
-        // transform: translate Y(5px);
-      }
-      
-    }
-  }
-`;
+}
+
+const renderCard = (projects, i) => {
+  return(
+    <Card style={CardBox} key={i}>
+    <Card.Img variant="top" src="holder.js/100px180" />
+    <Card.Body>
+      <Card.Title>{projects.name}</Card.Title>
+      <Card.Text>{projects.blurb}</Card.Text>
+      <Card.Link href={projects.url} target="_blank" rel="noreferrer"></Card.Link>
+    </Card.Body>
+    </Card>
+  )
+}
+
 
 function Projects(){
   return (
     <>
-    <h1>Look at my projects!</h1>
-    {/* <StyledList> */}
-      {projects.map(( {name, url, blurb}, i)  => {   
-        <Card>
-        <li key={i}>
-          <a href={url} target="_blank" rel="noreferrer">{name}</a><p>{blurb}</p></li>) 
-      })}
-      </Card>
-      // </StyledList>
+    <div style={CardGrid}>
+      <h1>Look at my projects!</h1>
+      {projects.map(renderCard)}
+    </div>
     </>
   );
 }
 
-export default Projects
+export default Projects;
