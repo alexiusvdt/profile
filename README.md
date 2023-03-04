@@ -28,6 +28,7 @@ TODO
   |1455| Still reading reactjs/react transitions|
   |1500| continuing react transitions |
   |1600| back to design decisions & researching |
+  |1700|break for dinner/eod|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
