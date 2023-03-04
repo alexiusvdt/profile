@@ -7,7 +7,12 @@ export const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm(
+      process.env.YOUR_SERVICE_ID,
+      process.env.YOUR_TEMPLATE_ID,
+      form.current,
+      process.env.YOUR_PUBLIC_KEY
+      )
       .then((result) => {
           console.log(result.text);
       }, (error) => {
