@@ -30,6 +30,12 @@ TODO
   |1600| back to design decisions & researching |
   |1700| break for dinner/eod|
 
+    2023/03/04
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |0900|morning commit|
+
+
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
 [typescript tutorial in progress](https://www.youtube.com/watch?v=30LWjhZzg50)
