@@ -36,6 +36,8 @@ TODO
   |0900|morning commit|
   |morning| see hrly progress|
   |1300|back from lunch|
+  |afternoon| see hrly commits|
+  |1530|reading up on reactjs-popup for notification confirmation|
 
 
 ## Look into:
@@ -44,7 +46,8 @@ Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-co
 [material ui docs](https://mui.com/material-ui/)
 [react spring](https://www.react-spring.dev/)
 [reactjs](https://reactjs.org/docs/getting-started.html)
-[contact form](https://w3collective.com/react-contact-form/)
+[popups](https://popupsmart.com/blog/react-popup)
+
 
 ## notes/reminders:
 * .env must be in the root folder & vars prefixed with REACT_APP_
