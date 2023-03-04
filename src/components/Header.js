@@ -60,7 +60,7 @@ const H1 = styled.h1 `
   return (
     <React.Fragment>
       <Div1>
-      <H1>Alex Johnson's Portfolio</H1>
+      <H1>Hi! I'm Alex.</H1>
         <span><P>|<StyledLink to="/">Home</StyledLink> | 
         <StyledLink to="/projects">Projects</StyledLink> | 
         <StyledLink to="/my-skills">My Skills</StyledLink> |

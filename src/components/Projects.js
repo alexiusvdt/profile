@@ -5,6 +5,7 @@ import { projects } from '../config';
 
 const CardBox = {
   width: '18rem',
+  margin: "20px",
   backgroundColor: "#ffffff",
   borderRadius: "10px 10px 10px 10px",
   overflow: "Hidden",
@@ -15,7 +16,10 @@ const CardBox = {
 }
 
 const CardGrid = {
-
+  minHeight: "100%",
+  display: "flex",
+  flexWrap: "wrap",
+  flexDirection: "row"
 }
 
 const renderCard = (projects, i) => {
@@ -35,8 +39,8 @@ const renderCard = (projects, i) => {
 function Projects(){
   return (
     <>
+    <h1>Look at my projects!</h1><br />
     <div style={CardGrid}>
-      <h1>Look at my projects!</h1>
       {projects.map(renderCard)}
     </div>
     </>
