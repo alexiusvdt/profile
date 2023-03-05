@@ -40,6 +40,10 @@ TODO
   |1530|reading up on reactjs-popup for notification confirmation|
   |1700| EOD commit|
 
+    2023/03/05
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |0900|Begin!|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
