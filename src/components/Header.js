@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function Header() {
@@ -7,22 +6,10 @@ function Header() {
 const Div1 = styled.div`
   background-color: #747474;
 `
-const StyledLink = styled(Link)`
-  color: #fff;
-  font-family: segoe UI, monospace;
-  margin: 5px;
-  &:hover{
-    color: green;
-  };
-  &:focus{
-  color: #151ba0;
-  };
-  
-`
+
 const P = styled.p`
   color: #fff;
 `
-// rainbow gradient version
 const H1 = styled.h1 `
   margin-top: 0px;
   margin-bottom: 10px;
@@ -33,7 +20,33 @@ const H1 = styled.h1 `
   -webkit-text-fill-color: transparent;
 `
 
+  return (
+    <>
+      <Div1>
+      <H1>Hi! I'm Alex.</H1>
+        {/* <span><P>|<StyledLink to="/">Home</StyledLink> | 
+        <StyledLink to="/projects">Projects</StyledLink> | 
+        <StyledLink to="/my-skills">My Skills</StyledLink> |
+        <StyledLink to="/contact-me">Contact Me</StyledLink> |</P> */}
+        {/* </span> */}
+      </Div1>
+    </>
+  );
+}
 
+export default Header;
+
+// delete all this
+// const StyledLink = styled(Link)`
+//   color: #fff;
+//   font-family: segoe UI, monospace;
+//   margin: 5px;
+//   &:hover{
+//     color: green;
+//   };
+//   &:focus{
+//   color: #151ba0;
+//   };
 // rainbow drop shadow version
 // const H1 = styled.h1`
 //   margin-top: 0px;
@@ -54,21 +67,4 @@ const H1 = styled.h1 `
 //               -28px 28px #eeff41,
 //               -32px 32px #f9a825,
 //               -36px 36px #ff5722;
-// `
-
-// fragment render
-  return (
-    <React.Fragment>
-      <Div1>
-      <H1>Hi! I'm Alex.</H1>
-        <span><P>|<StyledLink to="/">Home</StyledLink> | 
-        <StyledLink to="/projects">Projects</StyledLink> | 
-        <StyledLink to="/my-skills">My Skills</StyledLink> |
-        <StyledLink to="/contact-me">Contact Me</StyledLink> |</P>
-        </span>
-      </Div1>
-    </React.Fragment>
-  );
-}
-
-export default Header;
+// 

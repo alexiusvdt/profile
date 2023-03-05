@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Socials from './Socials';
+// import Socials from './Socials';
 import Projects from './Projects';
 import ContactForm from './ContactMe';
 import MySkills from './MySkills';
