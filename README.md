@@ -44,6 +44,7 @@ TODO
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |0900|Begin!|
+  |morning| see hrly commits|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
