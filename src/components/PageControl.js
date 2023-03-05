@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Socials from './Socials';
 import Projects from './Projects';
 import ContactForm from './ContactMe';
-
+import MySkills from './MySkills';
+import Main from './Main';
 import styled from "styled-components";
 import Sidebar from './Sidebar';
 
@@ -26,7 +27,10 @@ const PageControl = ({
         <Sidebar />
       </Pane>
       <Pane weight={rightWeight}>
+        <Main />
         <Projects />
+        <MySkills />
+        <ContactForm />
       </Pane>
     </Container>
   );
