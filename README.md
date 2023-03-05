@@ -48,6 +48,7 @@ TODO
   |1225|break for lunch|
   |1325|back from lunch|
   |1400|regretting design decisions & considering refactor, WIP on the header still|
+  |1500|still WIP on header, trying to figure out how to make this design work|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
