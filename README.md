@@ -47,7 +47,7 @@ TODO
   |morning| see hrly commits|
   |1225|break for lunch|
   |1325|back from lunch|
-  |||
+  |1400|regretting design decisions & considering refactor, WIP on the header still|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
