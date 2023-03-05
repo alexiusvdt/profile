@@ -1,45 +1,46 @@
 import React, {useState, useEffect} from "react";
 import styled from "styled-components";
 
-// const headerStyle = {
-//   position: 'sticky',
-//   top: 10,
-//   backgroundColor: '#BFDBFE',
-//   height: "6rem",
-//   transitionProperty: "all",
-//   transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-//   transitionDuration: "500ms",
-// }
+const headerStyle = {
+  position: 'sticky',
+  top: 10,
+  backgroundColor: '#BFDBFE',
+  height: "6rem",
+  transitionProperty: "all",
+  transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+  transitionDuration: "500ms",
+}
 
 function Header() {
-//   const scrollDirection = useScrollDirection();
+  const scrollDirection = useScrollDirection();
   
-//   function useScrollDirection() {
-//     const [scrollDirection, setScrollDirection] = useState(null);
+  function useScrollDirection() {
+    const [scrollDirection, setScrollDirection] = useState(null);
   
-//     useEffect(() => {
-//       let lastScrollY = window.pageYOffset;
+    useEffect(() => {
+      let lastScrollY = window.pageYOffset;
   
-//       const updateScrollDirection = () => {
-//         const scrollY = window.pageYOffset;
-//         const direction = scrollY > lastScrollY ? "down" : "up";
-//         if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
-//           setScrollDirection(direction);
-//         }
-//         lastScrollY = scrollY > 0 ? scrollY : 0;
-//       };
-//       window.addEventListener("scroll", updateScrollDirection); // add event listener
-//       return () => {
-//         window.removeEventListener("scroll", updateScrollDirection); // clean up
-//       }
-//     }, [scrollDirection]);
+      const updateScrollDirection = () => {
+        const scrollY = window.pageYOffset;
+        const direction = scrollY > lastScrollY ? "down" : "up";
+        if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+          setScrollDirection(direction);
+        }
+        lastScrollY = scrollY > 0 ? scrollY : 0;
+      };
+      window.addEventListener("scroll", updateScrollDirection); // add event listener
+      return () => {
+        window.removeEventListener("scroll", updateScrollDirection); // clean up
+      }
+    }, [scrollDirection]);
   
-//     return scrollDirection;
-//   };
+    return scrollDirection;
+  };
 
   return (
     <>
-      <div>
+    {/* styling isn't applying, why? tried nesting & alternate methods...maybe try inline styling next? */}
+      <div style={`headerStyle ${scrollDirection === "down" ? "hide" : "show"}`}>
         <H1>Hi! I'm Alex.</H1>
       </div>
     </>
