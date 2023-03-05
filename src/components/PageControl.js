@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styled from "styled-components";
 // import Socials from './Socials';
+// import Main from './Main';
 import Projects from './Projects';
 import ContactForm from './ContactMe';
-import MySkills from './AboutMe';
-import Main from './Main';
+import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
 
 const Container = styled.div`

@@ -45,6 +45,9 @@ TODO
   |:-----:|:--------------------------------------------------------------------|
   |0900|Begin!|
   |morning| see hrly commits|
+  |1225|break for lunch|
+  |1325||
+  |||
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
