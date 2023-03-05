@@ -38,6 +38,7 @@ TODO
   |1300|back from lunch|
   |afternoon| see hrly commits|
   |1530|reading up on reactjs-popup for notification confirmation|
+  |1700| EOD commit|
 
 
 ## Look into:
