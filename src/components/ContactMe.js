@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 
 export const ContactForm = () => {
+  //persist between renders
   const form = useRef();
 
   const sendEmail = (e) => {

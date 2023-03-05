@@ -1,19 +1,48 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import styled from "styled-components";
 
-function Header() {
+const headerStyle = {
+  position: 'sticky',
+  top: 10,
+  backgroundColor: '#BFDBFE',
+  height: "6rem",
+  transitionProperty: "all",
+  transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+  transitionDuration: "500ms",
+}
 
+function Header() {
+  const scrollDirection = useScrollDirection();
+  
+  function useScrollDirection() {
+    const [scrollDirection, setScrollDirection] = useState(null);
+  
+    useEffect(() => {
+      let lastScrollY = window.pageYOffset;
+  
+      const updateScrollDirection = () => {
+        const scrollY = window.pageYOffset;
+        const direction = scrollY > lastScrollY ? "down" : "up";
+        if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+          setScrollDirection(direction);
+        }
+        lastScrollY = scrollY > 0 ? scrollY : 0;
+      };
+      window.addEventListener("scroll", updateScrollDirection); // add event listener
+      return () => {
+        window.removeEventListener("scroll", updateScrollDirection); // clean up
+      }
+    }, [scrollDirection]);
+  
+    return scrollDirection;
+  };
 
   return (
     <>
-      <Div1>
-      <H1>Hi! I'm Alex.</H1>
-        {/* <span><P>|<StyledLink to="/">Home</StyledLink> | 
-        <StyledLink to="/projects">Projects</StyledLink> | 
-        <StyledLink to="/my-skills">My Skills</StyledLink> |
-        <StyledLink to="/contact-me">Contact Me</StyledLink> |</P> */}
-        {/* </span> */}
-      </Div1>
+    {/* styling isn't applying, why? tried nesting & alternate methods...maybe try inline styling next? */}
+      <div style={`headerStyle ${scrollDirection === "down" ? "hide" : "show"}`}>
+        <H1>Hi! I'm Alex.</H1>
+      </div>
     </>
   );
 }
@@ -21,9 +50,7 @@ function Header() {
 export default Header;
 
 // STYLING
-const Div1 = styled.div`
-  background-color: #747474;
-`
+
 const P = styled.p`
   color: #fff;
 `

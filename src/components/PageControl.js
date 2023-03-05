@@ -3,10 +3,9 @@ import styled from "styled-components";
 // import Socials from './Socials';
 import Projects from './Projects';
 import ContactForm from './ContactMe';
-import MySkills from './MySkills';
+import MySkills from './AboutMe';
 import Main from './Main';
 import Sidebar from './Sidebar';
-import Header from './Header';
 
 const Container = styled.div`
   display: flex;
@@ -27,10 +26,9 @@ const PageControl = ({
         <Sidebar />
       </Pane>
       <Pane weight={rightWeight}>
-        <Header />
-        <Main />
+        <AboutMe />
+        {/* <Main /> */}
         <Projects />
-        <MySkills />
         <ContactForm />
       </Pane>
     </Container>
