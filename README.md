@@ -46,7 +46,7 @@ TODO
   |0900|Begin!|
   |morning| see hrly commits|
   |1225|break for lunch|
-  |1325||
+  |1325|back from lunch|
   |||
 
 ## Look into:
