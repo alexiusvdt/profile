@@ -22,7 +22,7 @@ const Pane = styled.div`
   flex: ${props => props.weight};
   border: solid 3px black;
 `;
-
+// passing react component as prop
   return (
     <Container>
       <Pane weight={leftWeight}>
