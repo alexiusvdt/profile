@@ -6,7 +6,6 @@ import ContactForm from './ContactMe';
 import MySkills from './MySkills';
 import Main from './Main';
 import Sidebar from './Sidebar';
-import Header from './Header';
 
 const Container = styled.div`
   display: flex;
@@ -27,7 +26,6 @@ const PageControl = ({
         <Sidebar />
       </Pane>
       <Pane weight={rightWeight}>
-        <Header />
         <Main />
         <Projects />
         <MySkills />

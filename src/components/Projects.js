@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { projects } from '../config';
 import styled from "styled-components";
 
+// STYLING
 const H2 = styled.h2`
   textAlign: center
 `;
@@ -35,7 +36,6 @@ const renderCard = (projects, i) => {
       <Card.Title>{projects.name}</Card.Title>
       <Card.Text>{projects.blurb}</Card.Text>
       <Button variant="secondary" onClick={() => window.open(projects.url, '_blank')}>View on GitHub</Button>
-      {/* <Card.Link a href={projects.url} target="_blank" rel="noreferrer"></Card.Link> */}
     </Card.Body>
     </Card>
   )
