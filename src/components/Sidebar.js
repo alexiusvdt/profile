@@ -1,7 +1,7 @@
 import React from "react";
 
 function Sidebar(){
-  render(
+  return(
     <p>sidebar!</p>
   );
 }
