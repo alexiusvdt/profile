@@ -7,6 +7,13 @@ import ContactForm from './ContactMe';
 import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
 
+function PageControl(){
+  const [rightContent, setRightContent] = useState("Main")
+  const [leftWeight, setLeftWeight] = useState(0.75)
+  const [rightWeight, setRightWeight] = useState(4)
+
+
+
 const Container = styled.div`
   display: flex;
 
@@ -16,20 +23,17 @@ const Pane = styled.div`
   border: solid 3px black;
 `;
 
-const PageControl = ({
-  leftWeight = 0.75,
-  rightWeight = 4,
-}) => {
   return (
     <Container>
       <Pane weight={leftWeight}>
         <Sidebar />
       </Pane>
       <Pane weight={rightWeight}>
-        <AboutMe />
+        {rightContent}
+        {/* <AboutMe /> */}
         {/* <Main /> */}
-        <Projects />
-        <ContactForm />
+        {/* <Projects />
+        <ContactForm /> */}
       </Pane>
     </Container>
   );
