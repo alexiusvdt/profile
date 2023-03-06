@@ -50,6 +50,7 @@ TODO
   |1400|regretting design decisions & considering refactor, WIP on the header still|
   |1500|still WIP on header, trying to figure out how to make this design work|
   |1549|passing components as props hurts my brain|
+  |1625|still working on passing components|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
