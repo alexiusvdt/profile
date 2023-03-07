@@ -21,7 +21,7 @@ export default Sidebar;
 
 const NavLink = styled(Link)`
   font-size: 1.6rem;
-  color: #909096;
+  color: #3394b5;
   -webkit-transition: color 0.3s, background-color 0.3s;
   -o-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;

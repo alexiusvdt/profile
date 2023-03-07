@@ -15,8 +15,8 @@ function PageControl(){
     
   return (
     <Router>
-      <Header />
-      <Container>
+      <Div1><Header /></Div1>
+      {/* <Container> */}
         <Pane1>
           <Sidebar />
         </Pane1 >
@@ -28,15 +28,19 @@ function PageControl(){
           <Route path="/contact-me" element={<ContactForm />} />
       </Routes>
         </Pane2>
-      </Container>
+      {/* </Container> */}
     </Router>
   );
 }
 
 export default PageControl;
-const Container = styled.div`
-  display: flex;
-`;
+
+// STYLES
+
+// don't need this
+// const Container = styled.div`
+//   display: flex;
+// `;
 
 // if changin width here, also adjust width of header
 // todo: make panel weight a state effect
@@ -51,4 +55,8 @@ const Pane1 = styled.div`
 const Pane2 = styled.div`
   border: 1px solid red;
   margin-left: 250px;
+`;
+
+const Div1 = styled.div`
+  background-color: black;
 `;
