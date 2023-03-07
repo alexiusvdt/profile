@@ -63,6 +63,7 @@ TODO
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |0800|begin|
+  |morning|see hourlies... also I'm a fool for not trying to just use routing for my content panes|
  
 
 ## Look into:
