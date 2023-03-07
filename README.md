@@ -53,11 +53,17 @@ TODO
   |1625|still working on passing components|
   |1710|EOD commit|
 
-    2023/03/05
+    2023/03/06
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |1925|begin, pick up on component passing|
   |2115|EOD, still WIP on same component issue, argh|
+
+    2023/03/07
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |0800|begin|
+ 
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
