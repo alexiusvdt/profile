@@ -3,9 +3,8 @@ import { socialMedia } from '../config';
 import styled from 'styled-components';
 import { Icon } from '../components/icons/icon';
 
-
 const Socials = () => (
-  <div orientation="left">
+  <Div>
     <StyledSocialList>
       {socialMedia &&
         socialMedia.map(({url, name}, i) => (
@@ -16,14 +15,28 @@ const Socials = () => (
           </li>
         ))}
     </StyledSocialList>
-  </div>
+  </Div>
 )
 
 export default Socials;
 
+// STYLING
+const Div = styled.div`
+ display:flex;
+ align-items: center;
+ flex-direction:row;
+ position: absolute;
+ bottom: 0;
+
+ 
+ /* this is so jank please fix it */
+ margin-left: 60px;
+
+`;
+
 const StyledSocialList = styled.ul`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin: 1px;
   padding: 1px;
@@ -45,14 +58,14 @@ const StyledSocialList = styled.ul`
     }
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
     }
 
     li {
-      &:last-of-type {
+      /* &:last-of-type {
         margin-bottom: 20px;
-      }
+      } */
     }
   }
 `

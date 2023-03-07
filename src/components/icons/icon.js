@@ -6,6 +6,7 @@ import IconGithub from './IconGithub';
 import IconInstagram from './IconInstagram';
 import IconLinkedIn from './IconLinkedIn';
 
+// see config.js for these
 export const Icon = ({ name }) => {
   switch (name) {
     case 'Github':

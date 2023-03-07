@@ -10,6 +10,10 @@ module.exports = {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/ajohns12/'
     },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/ob.nixillis/'
+    }
   ],
 
   projects: [
