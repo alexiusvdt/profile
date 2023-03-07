@@ -7,22 +7,18 @@ import ContactForm from './ContactMe';
 import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
 
-function PageControl(){
+
+
+
+function PageControl(props){
   const [rightContent, setRightContent] = useState("Main")
   const [leftWeight, setLeftWeight] = useState(0.75)
   const [rightWeight, setRightWeight] = useState(4)
 
+function UpdatePane(selection){
+  setRightContent(selection)
+}
 
-
-const Container = styled.div`
-  display: flex;
-
-`;
-const Pane = styled.div`
-  flex: ${props => props.weight};
-  border: solid 3px black;
-`;
-// passing react component as prop
   return (
     <Container>
       <Pane weight={leftWeight}>
@@ -40,3 +36,13 @@ const Pane = styled.div`
 }
 
 export default PageControl;
+
+const Container = styled.div`
+  display: flex;
+
+`;
+const Pane = styled.div`
+  flex: ${props => props.weight};
+  border: solid 3px black;
+`;
+
