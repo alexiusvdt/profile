@@ -14,6 +14,7 @@
 * add socials quicklinks to sidebar
 * overall site styling
 * add animations
+* optimise for mobile
 * host it
 
 ## Research and Planning log

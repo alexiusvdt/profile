@@ -9,10 +9,10 @@ function Sidebar(){
     <>
       <img src={Logo} width={250} height={150} alt="placeholder"></img>
       <p>logo goes here!</p>
+      <NavLink to="/">Home</NavLink>
       <NavLink to="/about-me">About Me</NavLink>
       <NavLink to="/projects">Projects</NavLink>
       <NavLink to="/contact-me">Contact Me</NavLink>
-      <NavLink to="/">Main</NavLink>
     </>
   );
 }
