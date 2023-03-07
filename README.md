@@ -51,6 +51,12 @@ TODO
   |1500|still WIP on header, trying to figure out how to make this design work|
   |1549|passing components as props hurts my brain|
   |1625|still working on passing components|
+  |1710|EOD commit|
+
+    2023/03/05
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |1925|begin, pick up on component passing|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
