@@ -45,7 +45,6 @@ const Pane1 = styled.div`
   position: absolute;
   top: 0;
   bottom: 0;
-  border: 1px solid blue;
   background-color: black;
 `;
 

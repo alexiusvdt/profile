@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Logo from '../img/logo-placeholder.png'
 
 function Sidebar(){
 
   return(
     <>
+      <img src={Logo} width={250} height={150} alt="placeholder"></img>
       <p>logo goes here!</p>
       <NavLink to="/about-me">About Me</NavLink>
       <NavLink to="/projects">Projects</NavLink>
@@ -29,8 +31,4 @@ const NavLink = styled(Link)`
   display: block;
   line-height: 5rem;
   border-bottom: 1px solid #282828;
-`;
-
-const Div1 = styled.div`
-  background-color: black;
 `;
