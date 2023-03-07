@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 // import Socials from './Socials';
 // import Main from './Main';
@@ -9,15 +9,15 @@ import Sidebar from './Sidebar';
 
 // pretty sure you're writting this function incorrectly so state isnt creating correctly
 
+function UpdatePane(selection){
+  setRightContent(selection)
+}
 
 function PageControl(props){
   const [rightContent, setRightContent] = useState("Main")
   const [leftWeight, setLeftWeight] = useState(0.75)
   const [rightWeight, setRightWeight] = useState(4)
 
-  function UpdatePane(selection){
-    setRightContent(selection)
-  }
 
 
   return (
