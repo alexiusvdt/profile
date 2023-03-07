@@ -4,7 +4,7 @@ import styled from "styled-components";
 // import Main from './Main';
 import Projects from './Projects';
 import ContactForm from './ContactMe';
-import AboutMe from './AboutMe';
+// import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
 
 
@@ -15,9 +15,10 @@ function PageControl(props){
   const [leftWeight, setLeftWeight] = useState(0.75)
   const [rightWeight, setRightWeight] = useState(4)
 
-function UpdatePane(selection){
-  setRightContent(selection)
-}
+  function UpdatePane(selection){
+    setRightContent(selection)
+  }
+
 
   return (
     <Container>
@@ -36,7 +37,6 @@ function UpdatePane(selection){
 }
 
 export default PageControl;
-
 const Container = styled.div`
   display: flex;
 
