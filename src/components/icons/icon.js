@@ -4,16 +4,16 @@ import PropTypes from 'prop-types';
 // import { IconGitHub, IconInstagram, IconLinkedin} from '../icons/';
 import IconGithub from './IconGithub';
 import IconInstagram from './IconInstagram';
-import IconLinkedin from './IconLinkedin';
+import IconLinkedIn from './IconLinkedIn';
 
 export const Icon = ({ name }) => {
   switch (name) {
-    case 'GitHub':
+    case 'Github':
       return <IconGithub />;
+    case 'LinkedIn':
+      return <IconLinkedIn />;
     case 'Instagram':
       return <IconInstagram />;
-    case 'Linkedin':
-      return <IconLinkedin />;
     default:
       return <p>"something's wrong here"</p>
   }

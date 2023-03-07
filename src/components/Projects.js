@@ -4,11 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { projects } from '../config';
 import styled from "styled-components";
 
-// STYLING
-const H2 = styled.h2`
-  text-align: center
-`;
-
 const CardBox = {
   width: '18rem',
   margin: "20px",
@@ -53,3 +48,8 @@ function Projects(){
 }
 
 export default Projects;
+
+// STYLING
+const H2 = styled.h2`
+  text-align: center
+`;
