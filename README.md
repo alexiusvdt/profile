@@ -45,6 +45,26 @@ TODO
   |:-----:|:--------------------------------------------------------------------|
   |0900|Begin!|
   |morning| see hrly commits|
+  |1225|break for lunch|
+  |1325|back from lunch|
+  |1400|regretting design decisions & considering refactor, WIP on the header still|
+  |1500|still WIP on header, trying to figure out how to make this design work|
+  |1549|passing components as props hurts my brain|
+  |1625|still working on passing components|
+  |1710|EOD commit|
+
+    2023/03/06
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |1925|begin, pick up on component passing|
+  |2115|EOD, still WIP on same component issue, argh|
+
+    2023/03/07
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |0800|begin|
+  |morning|see hourlies... also I'm a fool for not trying to just use routing for my content panes|
+ 
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
@@ -53,7 +73,7 @@ Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-co
 [react spring](https://www.react-spring.dev/)
 [reactjs](https://reactjs.org/docs/getting-started.html)
 [popups](https://popupsmart.com/blog/react-popup)
-
+[component props](https://www.developerway.com/posts/react-component-as-prop-the-right-way)
 
 ## notes/reminders:
 * .env must be in the root folder & vars prefixed with REACT_APP_
