@@ -1,9 +1,18 @@
-## My portfolio
-TODO
+### My portfolio
+
+## Contents
+[TODO](#TODO)
+[Research and Planning](#research-and-planning-log)
+[license](#license)
+
+
+# TODO
 ~~* bootstrap it~~
-* set up component framework
-* establish page control
-* ... some other stuff
+~~* set up component framework~~
+~~* establish page control~~
+* add/style sidebar links
+* add socials quicklinks to sidebar
+* overall site styling
 * host it
 
 ## Research and Planning log
@@ -78,13 +87,30 @@ Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-co
 ## notes/reminders:
 * .env must be in the root folder & vars prefixed with REACT_APP_
 
-
 ## New tech:
 material ui - `npm install @mui/material @emotion/react @emotion/styled`
 `npm install @mui/material @mui/styled-engine-sc styled-components` (if using styled components)
 `npm install @mui/icons-material`
 `npm install @emailjs/browser --save` emailjs
 
+
+## Setup/Installation
+
+## Known Bugs
+
+## Thanks
+
+## License
+
+MIT License
+
+Copyright (c) 2023 Alex Johnson, Aitana Shough, Jennifer Holcomb, Dominik Magik, Richard Cha
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 ### Advanced Configuration
@@ -94,7 +120,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
