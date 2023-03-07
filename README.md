@@ -10,6 +10,7 @@
 ~~* bootstrap it~~
 ~~* set up component framework~~
 ~~* establish page control~~
+* add a splashy main page (some kind of animation)
 * add/style sidebar links
 * add socials quicklinks to sidebar
 * overall site styling
