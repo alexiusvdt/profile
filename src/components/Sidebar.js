@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from '../img/logo-placeholder.png'
+import Socials from "./Socials";
 
 function Sidebar(){
 
@@ -13,6 +14,7 @@ function Sidebar(){
       <NavLink to="/about-me">About Me</NavLink>
       <NavLink to="/projects">Projects</NavLink>
       <NavLink to="/contact-me">Contact Me</NavLink>
+      <Socials />
     </>
   );
 }
