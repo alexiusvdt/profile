@@ -12,10 +12,10 @@ import Sidebar from './Sidebar';
 
 
 function PageControl(props){
-  const [leftWeight, setLeftWeight] = useState(0.75)
-  const [rightWeight, setRightWeight] = useState(4)
-
-
+  const leftWeight = 0.75;
+  const rightWeight = 4;
+  
+  console.log(props.route)
   return (
     <Router>
       <Container>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // sidebar is selecting the content & switching it to pagecontrol
 // pagecontrol is rendering left & right bar
@@ -8,15 +9,12 @@ import React from "react";
 
 
 function Sidebar(){
-  // const handleSwitch = () => undefinedFunc("hi")
 
   return(
     <>
     <p>sidebar!</p>
-    <button 
-      // onClick={handleSwitch}
-      >switch</button>
-    <button >ContactMe</button>
+    <Link to="/contact-me">Contact Me</Link>
+    <Link to="/">Main</Link>
     </>
   );
 }
