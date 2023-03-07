@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Socials from './Socials';
@@ -11,25 +11,24 @@ import Sidebar from './Sidebar';
 // pretty sure you're writting this function incorrectly so state isnt creating correctly
 
 
-function PageControl(props){
+function PageControl(){
   const leftWeight = 0.75;
   const rightWeight = 4;
-  
-  console.log(props.route)
+    
   return (
     <Router>
       <Container>
-        <Pane weight={leftWeight}>
+        <Pane1>
           <Sidebar />
-        </Pane>
-        <Pane weight={rightWeight}>
+        </Pane1>
+        <Pane2 weight={rightWeight}>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact-me" element={<ContactForm />} />
       </Routes>
-        </Pane>
+        </Pane2>
       </Container>
     </Router>
   );
@@ -40,8 +39,15 @@ const Container = styled.div`
   display: flex;
 
 `;
-const Pane = styled.div`
-  flex: ${props => props.weight};
-  border: solid 3px black;
+const Pane1 = styled.div`
+  width: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 1px solid blue;
 `;
 
+const Pane2 = styled.div`
+   border: 1px solid red;
+  margin-left: 5px;
+`;
