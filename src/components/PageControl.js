@@ -7,7 +7,7 @@ import ContactForm from './ContactMe';
 // import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
 
-
+// pretty sure you're writting this function incorrectly so state isnt creating correctly
 
 
 function PageControl(props){
