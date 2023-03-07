@@ -57,6 +57,7 @@ TODO
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |1925|begin, pick up on component passing|
+  |2115|EOD, still WIP on same component issue, argh|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
