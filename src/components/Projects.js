@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 // STYLING
 const H2 = styled.h2`
-  textAlign: center
+  text-align: center
 `;
 
 const CardBox = {

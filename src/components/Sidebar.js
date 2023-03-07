@@ -6,16 +6,31 @@ function Sidebar(){
 
   return(
     <>
-    <p>sidebar!</p>
-    <Div><Link to="/about-me">About Me</Link></Div>
-    <Div><Link to="/projects">Projects</Link></Div>
-    <Div><Link to="/contact-me">Contact Me</Link></Div>
-    <Div><Link to="/">Main</Link></Div>
+      <p>logo goes here!</p>
+      <NavLink to="/about-me">About Me</NavLink>
+      <NavLink to="/projects">Projects</NavLink>
+      <NavLink to="/contact-me">Contact Me</NavLink>
+      <NavLink to="/">Main</NavLink>
     </>
   );
 }
 
 export default Sidebar;
-const Div = styled.div`
-border: 1px solid black
+
+const NavLink = styled(Link)`
+  font-size: 1.6rem;
+  color: #909096;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  display: block;
+  line-height: 5rem;
+  border-bottom: 1px solid #282828;
+`;
+
+const Div1 = styled.div`
+  background-color: black;
 `;

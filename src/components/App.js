@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import PageControl from "./PageControl";
 // import Projects from "./Projects";
 // import ContactMe from "./ContactMe";
@@ -8,10 +7,7 @@ import PageControl from "./PageControl";
 
 function App(){
   return (
-    <>
-    <Header />
     <PageControl />
-    </>
   );
 }
 

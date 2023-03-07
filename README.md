@@ -13,6 +13,7 @@
 * add/style sidebar links
 * add socials quicklinks to sidebar
 * overall site styling
+* add animations
 * host it
 
 ## Research and Planning log

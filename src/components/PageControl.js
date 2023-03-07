@@ -2,26 +2,25 @@ import React from 'react';
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Socials from './Socials';
+import Header from './Header';
 import Main from './Main';
 import Projects from './Projects';
 import ContactForm from './ContactMe';
 import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
 
-// pretty sure you're writting this function incorrectly so state isnt creating correctly
-
-
 function PageControl(){
-  const leftWeight = 0.75;
-  const rightWeight = 4;
+  // const leftWeight = 0.75;
+  // const rightWeight = 4;
     
   return (
     <Router>
+      <Header />
       <Container>
         <Pane1>
           <Sidebar />
-        </Pane1>
-        <Pane2 weight={rightWeight}>
+        </Pane1 >
+        <Pane2>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about-me" element={<AboutMe />} />
@@ -37,17 +36,20 @@ function PageControl(){
 export default PageControl;
 const Container = styled.div`
   display: flex;
-
 `;
+
+// if changin width here, also adjust width of header
+// todo: make panel weight a state effect
 const Pane1 = styled.div`
   width: 250px;
   position: absolute;
   top: 0;
   bottom: 0;
   border: 1px solid blue;
+  background-color: black;
 `;
 
 const Pane2 = styled.div`
-   border: 1px solid red;
-  margin-left: 5px;
+  border: 1px solid red;
+  margin-left: 250px;
 `;
