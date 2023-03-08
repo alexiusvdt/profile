@@ -12,8 +12,7 @@ function Main(){
     // implement tailwind?
     // className='text-gray-900 absolute top-0 left-0 w-full h-full lg:px-48 px-16'
     >
-      <div>
-      {/* position: "absolute",  color: 'white', */}
+      <div style={{vh: "100%"}}>
         <h1 style={{textAlign: 'center',  color: '#fff', position: 'absolute'}}>
           Fgsfds!
         </h1>

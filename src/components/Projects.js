@@ -17,7 +17,7 @@ const CardBox = {
 }
 
 const CardGrid = {
-  minHeight: "100%",
+  height: "100vh",
   display: "flex",
   flexWrap: "wrap",
   flexDirection: "row",

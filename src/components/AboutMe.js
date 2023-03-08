@@ -6,7 +6,7 @@ function AboutMe(){
   return(
     <>
     <Div>
-      <Div>
+      <div>
         <P>Hi, I'm Alex, a junior developer looking to make their mark on the industry. 
           I specialize in creating user-friendly websites and mobile apps with an eye to accessability 
           as well as functionality and stability. I'm passionate about creating unique and innovative 
@@ -14,11 +14,10 @@ function AboutMe(){
           new technologies, riding my bicycle (currently training for <a href="https://ridetherimoregon.com/" target="_blank" rel="noreferrer">Ride The Rim Oregon</a>) 
           and playing tabletop role playing games with my friends. My ultimate goal is to create designs that 
           not only look great but also solve real-world problems for my clients!</P>
-      </Div>
+      </div>
       <div>
         <img src={Headshot} width={450} height={350} alt="My headshot"></img>
       </div>
-
     </Div>
     
    
@@ -33,6 +32,7 @@ const Div = styled.div`
  display:flex;
  align-items: center;
  flex-direction:row;
+ height: "100vh",
 `;
 
 const P = styled.p`

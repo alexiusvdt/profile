@@ -54,7 +54,7 @@ const Pane1 = styled.div`
 `;
 
 const Pane2 = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-left: 250px;
 `;
 

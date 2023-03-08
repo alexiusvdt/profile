@@ -25,7 +25,7 @@ export const ContactForm = () => {
 
   return (
     <>
-    <h3 style={{textAlign: "center", color: '#fff'}}>Hey, drop me a line! </h3>
+    <h3 style={{textAlign: "center", color: '#fff',  margin: '0', padding:'0', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
     <StyledContactForm>
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
