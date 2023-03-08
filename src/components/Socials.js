@@ -25,7 +25,7 @@ const Div = styled.div`
  display:flex;
  align-items: center;
  flex-direction:row;
- position: absolute;
+ position: fixed;
  bottom: 0;
 
  
