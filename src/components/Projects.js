@@ -51,5 +51,6 @@ export default Projects;
 
 // STYLING
 const H2 = styled.h2`
-  text-align: center
+  text-align: center;
+  color: #fff;
 `;

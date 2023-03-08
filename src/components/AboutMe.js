@@ -37,6 +37,6 @@ const Div = styled.div`
 
 const P = styled.p`
   text-align: center;
-  
+  color: #fff;
   justify-content: center;
 `;

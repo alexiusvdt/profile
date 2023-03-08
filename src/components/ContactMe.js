@@ -25,7 +25,7 @@ export const ContactForm = () => {
 
   return (
     <>
-    <h3 style={{textAlign: "center"}}>Hey, drop me a line! </h3>
+    <h3 style={{textAlign: "center", color: '#fff'}}>Hey, drop me a line! </h3>
     <StyledContactForm>
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
@@ -47,6 +47,7 @@ export default ContactForm;
 const StyledContactForm = styled.div`
   width: 400px;
   margin: auto;
+  color: white;
   form {
     display: flex;
     align-items: flex-start;
