@@ -12,8 +12,9 @@
 ~~* establish page control~~
 MVP GET!
 * add a splashy main page (some kind of animation)
-* add/style sidebar links
-* add socials quicklinks to sidebar
+~~* add/style sidebar links~~
+~~* add socials quicklinks to sidebar~~
+* add email sent confirmation on formsbubmit
 * overall site styling
 * add animations
 * unified theme

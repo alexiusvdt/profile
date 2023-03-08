@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Socials from './Socials';
-import Header from './Header';
+// import Header from './Header';
 import Main from './Main';
 import Projects from './Projects';
 import ContactForm from './ContactMe';
@@ -17,7 +16,6 @@ function PageControl(){
   return (
     <Router>
       {/* <Div1><Header /></Div1> */}
-      {/* <Container> */}
         <Pane1>
           <Sidebar />
         </Pane1 >
@@ -29,7 +27,6 @@ function PageControl(){
           <Route path="/contact-me" element={<ContactForm />} />
       </Routes>
         </Pane2>
-      {/* </Container> */}
     </Router>
   );
 }
@@ -56,8 +53,10 @@ const Pane1 = styled.div`
 const Pane2 = styled.div`
   /* border: 1px solid red; */
   margin-left: 250px;
+  height: 100%;
+  /* flex: 1; */
 `;
 
-const Div1 = styled.div`
-  background-color: black;
-`;
+// const Div1 = styled.div`
+//   background-color: black;
+// `;

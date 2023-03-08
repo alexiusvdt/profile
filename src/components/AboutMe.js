@@ -32,7 +32,7 @@ const Div = styled.div`
  display:flex;
  align-items: center;
  flex-direction:row;
- height: "100vh",
+ height: "100vh";
 `;
 
 const P = styled.p`
