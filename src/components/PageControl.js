@@ -16,7 +16,7 @@ function PageControl(){
     
   return (
     <Router>
-      <Div1><Header /></Div1>
+      {/* <Div1><Header /></Div1> */}
       {/* <Container> */}
         <Pane1>
           <Sidebar />
