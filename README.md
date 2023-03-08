@@ -10,6 +10,7 @@
 ~~* bootstrap it~~
 ~~* set up component framework~~
 ~~* establish page control~~
+MVP GET!
 * add a splashy main page (some kind of animation)
 * add/style sidebar links
 * add socials quicklinks to sidebar
@@ -77,7 +78,8 @@
   |0800|begin|
   |morning|see hourlies... also I'm a fool for not trying to just use routing for my content panes|
   |1200-1300| lunch |
- 
+  |afternoon|see hourlies|
+  |1800||
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
@@ -96,6 +98,7 @@ material ui - `npm install @mui/material @emotion/react @emotion/styled`
 `npm install @mui/material @mui/styled-engine-sc styled-components` (if using styled components)
 `npm install @mui/icons-material`
 `npm install @emailjs/browser --save` emailjs
+`npm install @framer-motion` framermotion
 
 
 ## Setup/Installation
