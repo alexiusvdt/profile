@@ -61,4 +61,5 @@ const Pane2 = styled.div`
 
 // const Div1 = styled.div`
 //   background-color: black;
+/* border: 1px solid green; */
 // `;
