@@ -90,6 +90,7 @@ MVP GET!
   |1000|animations/css fixing|
   |1125|ssafety commit|
   |1230|break for lunch|
+  |1330|resume work|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
