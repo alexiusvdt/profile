@@ -20,7 +20,9 @@ const CardGrid = {
   minHeight: "100%",
   display: "flex",
   flexWrap: "wrap",
-  flexDirection: "row"
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "center"
 }
 
 const renderCard = (projects, i) => {

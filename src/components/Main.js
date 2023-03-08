@@ -14,7 +14,7 @@ function Main(){
     >
       <div>
       {/* position: "absolute",  color: 'white', */}
-        <h1 style={{alignItems: 'center',  position: 'absolute', bottom:'0', height: '100vh'}}>
+        <h1 style={{textAlign: 'center',  color: '#fff', position: 'absolute'}}>
           Fgsfds!
         </h1>
       </div>
