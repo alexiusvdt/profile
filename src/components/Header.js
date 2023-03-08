@@ -7,7 +7,12 @@ function Header() {
 
   return (
     <>
-      <m.div>
+      <m.div
+        animate={{ x:0 }}
+        initial={{ x:300 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        className="box"
+        >
         <H1>Hi! I'm Alex.</H1>
       </m.div>
     </>
