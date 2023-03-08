@@ -86,6 +86,7 @@ MVP GET!
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |0830|begin|
+  |0920|working on animations|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
