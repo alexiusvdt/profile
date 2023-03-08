@@ -15,6 +15,7 @@
 * add socials quicklinks to sidebar
 * overall site styling
 * add animations
+* unified theme
 * optimise for mobile
 * host it
 
