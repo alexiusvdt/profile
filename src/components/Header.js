@@ -51,10 +51,12 @@ function Header() {
 export default Header;
 
 // STYLING
+// this can probably get deleted
 
-const P = styled.p`
-  color: #fff;
-`
+// const P = styled.p`
+//   color: #fff;
+// `
+
 const H1 = styled.h1 `
   margin-left: 250px;  
   margin-top: 0px;

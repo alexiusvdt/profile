@@ -8,7 +8,7 @@ import Projects from './Projects';
 import ContactForm from './ContactMe';
 import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
-import { motion as m } from framer-motion;
+import { motion as m } from 'framer-motion';
 
 function PageControl(){
   // const leftWeight = 0.75;
