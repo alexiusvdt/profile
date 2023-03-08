@@ -81,6 +81,11 @@ MVP GET!
   |1200-1300| lunch |
   |afternoon|see hourlies|
   |1800||
+    
+    2023/03/08
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |0830|begin|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
