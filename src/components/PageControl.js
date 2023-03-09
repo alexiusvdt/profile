@@ -5,32 +5,6 @@ import { BrowserRouter as Router} from "react-router-dom";
 import Sidebar from './Sidebar';
 import AnimatedRoutes from './AnimatedRoutes';
 
-
-function PageControl(){
-
-  return (
-    <Router>
-        <Pane1>
-          <Sidebar />
-        </Pane1 >
-        <Pane2>
-          <AnimatedRoutes />
-        </Pane2>
-    </Router>
-  );
-}
-
-export default PageControl;
-
-// STYLES
-
-// don't need this
-// const Container = styled.div`
-//   display: flex;
-// `;
-
-// if changin width here, also adjust width of header
-// todo: make panel weight a state effect
 const Pane1 = styled.div`
     /* border: 1px solid blue; */
   width: 250px;
@@ -52,3 +26,21 @@ const Pane2 = styled.div`
 //   background-color: black;
 /* border: 1px solid green; */
 // `;
+
+
+function PageControl(){
+
+  return (
+    <Router>
+        <Pane1>
+          <Sidebar />
+        </Pane1 >
+        <Pane2>
+          <AnimatedRoutes />
+        </Pane2>
+    </Router>
+  );
+}
+
+export default PageControl;
+
