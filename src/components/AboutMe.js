@@ -7,12 +7,11 @@ function AboutMe(){
   return(
     <>
     <m.div
-    ini tial={{opacity: 0}}
+    initial={{opacity: 0}}
       animate={{opacity: 1}}
       exit={{opacity: 0}}
       >
-      <Div>
-        <div>
+        <div style={{ display:"flex", alignItems: "center", flexDirection: "row"}}>
           <P>Hi, I'm Alex, a junior developer looking to make their mark on the industry. 
             I specialize in creating user-friendly websites and mobile apps with an eye to accessability 
             as well as functionality and stability. I'm passionate about creating unique and innovative 
@@ -24,7 +23,6 @@ function AboutMe(){
         <div>
           <img src={Headshot} width={450} height={350} alt="My headshot"></img>
         </div>
-      </Div>
     </m.div>
    
     </>
@@ -34,12 +32,6 @@ function AboutMe(){
 export default AboutMe;
 
 // STYLE
-const Div = styled.div`
- display:flex;
- align-items: center;
- flex-direction:row;
- height: "100vh";
-`;
 
 const P = styled.p`
   text-align: center;
