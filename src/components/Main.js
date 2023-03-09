@@ -2,6 +2,7 @@ import React from "react";
 import { motion as m } from 'framer-motion';
 
 // this is the text animation branch
+// hook non functional
 
 function Main(){
   return(
