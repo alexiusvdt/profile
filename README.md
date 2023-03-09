@@ -97,6 +97,11 @@ MVP GET!
   |1930| making an icon|
   |2030| end of a long day|
 
+    2023/03/09
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |0830|begin|
+
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
 [typescript tutorial in progress](https://www.youtube.com/watch?v=30LWjhZzg50)
