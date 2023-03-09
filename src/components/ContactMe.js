@@ -1,56 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import { motion as m } from 'framer-motion';
+import { Alert, Button} from 'react-bootstrap'
 
-export const ContactForm = () => {
-  //persist between renders
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_PUBLIC_KEY,
-      )
-      .then((result) => {
-          console.log(result.text);
-          console.log("message sent");
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
-
-  return (
-    <>
-    <m.div
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      transition={{ duration: 0.5}}
-      >
-      <h3 style={{textAlign: "center", color: '#fff',  margin: '0', padding:'0', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
-      <StyledContactForm>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
-      </StyledContactForm>
-    </m.div>
-    </>
-  );
-};
-
-export default ContactForm;
-
-// STYLING
 const StyledContactForm = styled.div`
   width: 400px;
   margin: auto;
@@ -98,3 +51,64 @@ const StyledContactForm = styled.div`
     }
   }
 `;
+
+export const ContactForm = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleAlertDismiss = () => {
+    setShowAlert(false);
+  }
+
+  //persist between renders
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      form.current,
+      process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(setShowAlert(true));
+        setTimeout(() => {
+          setShowAlert(false);
+        }, 3000);
+      // .then((result) => {
+      //     console.log(result.text);
+      //     console.log("message sent");
+      // }, (error) => {
+      //     console.log(error.text);
+      // });
+  };
+
+  return (
+    <>
+    <m.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{ duration: 0.5}}
+      >
+      <h3 style={{textAlign: "center", color: '#fff',  margin: '0', padding:'0', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
+      <StyledContactForm>
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+      </form>
+      { showAlert && (
+          <Alert variant="success" dismissible onClose={handleAlertDismiss}>
+          Email sent successfully!</Alert>
+        )}
+      </StyledContactForm>
+    </m.div>
+    </>
+  );
+};
+
+export default ContactForm;
