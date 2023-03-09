@@ -1,30 +1,24 @@
 import React from 'react';
 import styled from "styled-components";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 // import Header from './Header';
 import Main from './Main';
 import Projects from './Projects';
 import ContactForm from './ContactMe';
 import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
+import AnimatedRoutes from './AnimatedRoutes';
 
 
 function PageControl(){
-  // const leftWeight = 0.75;
-  // const rightWeight = 4;
-    
+
   return (
     <Router>
         <Pane1>
           <Sidebar />
         </Pane1 >
         <Pane2>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/about-me" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact-me" element={<ContactForm />} />
-      </Routes>
+          <AnimatedRoutes />
         </Pane2>
     </Router>
   );
