@@ -8,7 +8,7 @@ function Main(){
     <m.div 
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ duration: 0.75, ease: "easeOut" }}
+    transition={{ duration: 0.5}}
     // implement tailwind?
     // className='text-gray-900 absolute top-0 left-0 w-full h-full lg:px-48 px-16'
     >

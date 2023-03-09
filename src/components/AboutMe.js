@@ -9,7 +9,7 @@ function AboutMe(){
     <m.div
     initial={{opacity: 0}}
       animate={{opacity: 1}}
-      exit={{opacity: 0}}
+      transition={{ duration: 0.5}}
       >
         <div style={{ display:"flex", alignItems: "center", flexDirection: "row"}}>
           <P>Hi, I'm Alex, a junior developer looking to make their mark on the industry. 

@@ -29,7 +29,7 @@ export const ContactForm = () => {
     <m.div
       initial={{opacity: 0}}
       animate={{opacity: 1}}
-      exit={{opacity: 0}}
+      transition={{ duration: 0.5}}
       >
       <h3 style={{textAlign: "center", color: '#fff',  margin: '0', padding:'0', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
       <StyledContactForm>

@@ -2,10 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import { BrowserRouter as Router} from "react-router-dom";
 // import Header from './Header';
-import Main from './Main';
-import Projects from './Projects';
-import ContactForm from './ContactMe';
-import AboutMe from './AboutMe';
 import Sidebar from './Sidebar';
 import AnimatedRoutes from './AnimatedRoutes';
 

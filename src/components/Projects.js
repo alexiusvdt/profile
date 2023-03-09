@@ -22,13 +22,11 @@ function Projects(){
   return (
     <>
     <m.div
-    // 0 not visible 
+      // note: exit and ease properties may have ~funky~ consequences on animation
       initial={{opacity: 0}}
-      // animation should make it visible (1)
       animate={{opacity: 1}}
-      // when exiting the route, it goes back invisible
-      exit={{opacity: 0}}
-    >
+      transition={{ duration: 0.5}}
+      >
       <H2>Look at my projects!</H2><br />
       <div style={CardGrid}>
         {projects.map(renderCard)}
