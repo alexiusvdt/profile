@@ -1,7 +1,7 @@
 import React from "react";
 import { motion as m } from 'framer-motion';
 
-// this m.div still needs work!
+// this is the text animation branch
 
 function Main(){
   return(
