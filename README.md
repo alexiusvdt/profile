@@ -101,6 +101,7 @@ MVP GET!
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |0830|begin|
+  |1100| reading up on hosting & trying to implement|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
