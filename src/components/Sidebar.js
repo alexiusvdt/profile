@@ -9,7 +9,7 @@ function Sidebar(){
   return(
     <>
       <img src={Logo} width={250} height={150} alt="placeholder"></img>
-      <p>logo goes here!</p>
+      <p></p>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/about-me">About Me</NavLink>
       <NavLink to="/projects">Projects</NavLink>

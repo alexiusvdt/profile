@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
+import { motion as m } from 'framer-motion';
 
 export const ContactForm = () => {
   //persist between renders
@@ -25,18 +26,24 @@ export const ContactForm = () => {
 
   return (
     <>
-    <h3 style={{textAlign: "center", color: '#fff'}}>Hey, drop me a line! </h3>
-    <StyledContactForm>
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
-    </StyledContactForm>
+    <m.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      >
+      <h3 style={{textAlign: "center", color: '#fff',  margin: '0', padding:'0', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
+      <StyledContactForm>
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+      </form>
+      </StyledContactForm>
+    </m.div>
     </>
   );
 };

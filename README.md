@@ -12,8 +12,9 @@
 ~~* establish page control~~
 MVP GET!
 * add a splashy main page (some kind of animation)
-* add/style sidebar links
-* add socials quicklinks to sidebar
+~~* add/style sidebar links~~
+~~* add socials quicklinks to sidebar~~
+* add email sent confirmation on formsbubmit
 * overall site styling
 * add animations
 * unified theme
@@ -88,6 +89,9 @@ MVP GET!
   |0830|begin|
   |0920|working on animations|
   |1000|animations/css fixing|
+  |1125|ssafety commit|
+  |1230|break for lunch|
+  |1330|resume work|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
