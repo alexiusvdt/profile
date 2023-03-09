@@ -8,7 +8,7 @@ function Main(){
     <m.div 
       initial={{ y: '100vh' }}
       animate={{ y: '50vh' }}
-      transition={{ type: 'spring', stiffness: '100', damping: '20', duration: 1, ease: "easeOut" }}
+      transition={{ type: 'spring', stiffness: 100, damping: 20, duration: 1, ease: "easeOut" }}
       >
       <div>
         {/* <img></img> */}

@@ -11,9 +11,10 @@
 ~~* set up component framework~~
 ~~* establish page control~~
 MVP GET!
-* add a splashy main page (some kind of animation)
+~~* add a splashy main page (some kind of animation)~~
 ~~* add/style sidebar links~~
 ~~* add socials quicklinks to sidebar~~
+* make initial animation play once, then have home content be static something
 * add email sent confirmation on formsbubmit
 * overall site styling
 * add animations
@@ -92,6 +93,8 @@ MVP GET!
   |1125|ssafety commit|
   |1230|break for lunch|
   |1330|resume work|
+  |afternoon|see hourlies|
+  |1930| making an icon|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
