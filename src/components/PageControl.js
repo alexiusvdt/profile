@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import { BrowserRouter as Router} from "react-router-dom";
-// import Header from './Header';
 import Sidebar from './Sidebar';
 import AnimatedRoutes from './AnimatedRoutes';
 
@@ -21,12 +20,6 @@ const Pane2 = styled.div`
   flex: 1;
   background-color: black;
 `;
-
-// const Div1 = styled.div`
-//   background-color: black;
-/* border: 1px solid green; */
-// `;
-
 
 function PageControl(){
 
