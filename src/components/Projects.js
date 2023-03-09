@@ -3,6 +3,7 @@ import { Card, Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.css';
 import { projects } from '../config';
 import styled from "styled-components";
+import { motion as m } from 'framer-motion';
 
 const renderCard = (projects, i) => {
   return(
@@ -20,10 +21,19 @@ const renderCard = (projects, i) => {
 function Projects(){
   return (
     <>
-    <H2>Look at my projects!</H2><br />
-    <div style={CardGrid}>
-      {projects.map(renderCard)}
-    </div>
+    <m.div
+    // 0 not visible 
+      initial={{opacity: 0}}
+      // animation should make it visible (1)
+      animate={{opacity: 1}}
+      // when exiting the route, it goes back invisible
+      exit={{opacity: 0}}
+    >
+      <H2>Look at my projects!</H2><br />
+      <div style={CardGrid}>
+        {projects.map(renderCard)}
+      </div>
+    </m.div>
     </>
   );
 }
