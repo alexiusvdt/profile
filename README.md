@@ -102,6 +102,9 @@ MVP GET!
   |:-----:|:--------------------------------------------------------------------|
   |0830|begin|
   |1100| reading up on hosting & trying to implement|
+  |1200|lunch|
+  |1300|end lunch|
+
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
