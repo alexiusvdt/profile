@@ -95,6 +95,7 @@ MVP GET!
   |1330|resume work|
   |afternoon|see hourlies|
   |1930| making an icon|
+  |2030| end of a long day|
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)

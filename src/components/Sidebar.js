@@ -8,7 +8,7 @@ function Sidebar(){
 
   return(
     <>
-      <div style={{textAlign: 'center', display: 'block', justifyContent: 'center', alignItems: 'center', margin: 'auto', width: '100%' }}>
+      <div style={{textAlign: 'center', display: 'block', justifyContent: 'center', alignItems: 'center', margin: 'auto', width: '100%'}}>
         <img src={SCREAMCAT} width={200} height={200} alt="placeholder"></img>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about-me">About Me</NavLink>
