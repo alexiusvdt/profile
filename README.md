@@ -14,10 +14,10 @@ MVP GET!
 ~~* add a splashy main page (some kind of animation)~~
 ~~* add/style sidebar links~~
 ~~* add socials quicklinks to sidebar~~
-* make initial animation play once, then have home content be static something
 ~~* add email sent confirmation on formsbubmit~~
+~~* add animations~~
+* make initial animation play once, then have home content be static something
 * overall site styling
-* add animations
 * unified theme
 * optimise for mobile
 * host it
