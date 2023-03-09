@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { motion as m } from 'framer-motion';
 import SCREAMCAT from '../img/cat-transp.png';
 
-// this m.div still needs work!
-
 function Main(){
   const [animate, setAnimate] = useState(true)
 
@@ -17,8 +15,8 @@ function Main(){
       <m.div 
         initial={{ y: '100vh' }}
         animate={{ y: '50vh' }}
-        transition={{ type: 'spring', stiffness: 100, damping: 20, duration: 1, ease: "easeOut"}}
-        onAnimationComplete={()=> setAnimate(false)}>   
+        transition={{ type: 'spring', stiffness: 100, damping: 20}}
+        onAnimationComplete={() => setAnimate(false)}>   
           <img
             src={SCREAMCAT}
             alt="A lil' cat"
