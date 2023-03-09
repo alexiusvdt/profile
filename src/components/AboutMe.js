@@ -2,6 +2,21 @@ import React from "react";
 import Headshot from '../img/headshot.png';
 import styled from "styled-components";
 import { motion as m } from 'framer-motion';
+import { Alert, Button} from 'react-bootstrap'
+
+function DismissableAlert(){
+  const [show, setShow] = useState(true);
+
+  if (show) {
+    return(
+      <Alert variant="danger" onClose={() => setShow(false)} dismissable>
+        <Alert.Heading>Thanks!</Alert.Heading>
+        <p>I'll be sure to get to that right away, look forward to talking to you more!</p>
+      </Alert>
+    );
+  }
+  // return <Button onClick={() => setShow(true)}>Show Alert</Button>;
+}
 
 function AboutMe(){
   return(
