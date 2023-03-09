@@ -15,7 +15,7 @@ MVP GET!
 ~~* add/style sidebar links~~
 ~~* add socials quicklinks to sidebar~~
 * make initial animation play once, then have home content be static something
-* add email sent confirmation on formsbubmit
+~~* add email sent confirmation on formsbubmit~~
 * overall site styling
 * add animations
 * unified theme

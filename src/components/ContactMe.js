@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import { motion as m } from 'framer-motion';
-import { Alert, Button} from 'react-bootstrap'
+import { Alert} from 'react-bootstrap'
 
 const StyledContactForm = styled.div`
   width: 400px;
