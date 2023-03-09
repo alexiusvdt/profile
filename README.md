@@ -104,6 +104,7 @@ MVP GET!
   |1100| reading up on hosting & trying to implement|
   |1200|lunch|
   |1300|end lunch|
+  |1330|break for presentations|
 
 
 ## Look into:
