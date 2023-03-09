@@ -6,11 +6,12 @@ import { motion as m } from 'framer-motion';
 function Main(){
   return(
     <m.div 
-      initial={{opacity: 0}}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      initial={{ y: '100vh' }}
+      animate={{ y: '50vh' }}
+      transition={{ type: 'spring', stiffness: '100', damping: '20', duration: 1, ease: "easeOut" }}
       >
       <div>
+        {/* <img></img> */}
         <h1 style={{textAlign: 'center', justifyContent: 'center',  color: '#fff'}}>
           Fgsfds!
         </h1>
