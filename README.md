@@ -2,11 +2,12 @@
 
 ## Contents
 [TODO](#TODO)
+[Setup](#setup--installation)
 [Research and Planning](#research-and-planning-log)
 [license](#license)
 
 
-# TODO
+## TODO
 ~~* bootstrap it~~
 ~~* set up component framework~~
 ~~* establish page control~~
@@ -21,6 +22,13 @@ MVP GET!
 * unified theme
 * optimise for mobile
 * host it
+
+## Setup & Installation
+* clone this repo
+* navigate into the project directory & open a command line
+* run `npm install` to install necessary dependencies
+* run `npm run build` & it should open in your browser
+    * if it doesn't auto-open a tab, open a browser of your choice & navigate to `localhost:3000`
 
 ## Research and Planning log
   2023/03/01
