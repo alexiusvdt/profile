@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion as m } from 'framer-motion';
+import Logo from '../img/aLogo.png'
 
-// this is the text animation branch
-// hook non functional
 
 function Main(){
+  const [playAnimation, setPlayAnimation] = useState(true);
+
+  const onAnimationComplete = () => {
+    setPlayAnimation(false)
+  }
+
   return(
-    <m.div 
-    initial={{ y: '100vh' }}
-    animate={{ y: '50vh' }}
-    transition={{ type: 'spring', stiffness: 100, damping: 20, duration: 1, ease: "easeOut" }}
-      >
-      <div>
-        <h1 style={{textAlign: 'center', justifyContent: 'center',  color: '#fff'}}>
-          This is going to be a splash animation! Wow!
-        </h1>
-      </div>
+    <m.div>
+      <img 
+        src={Logo}
+        alt={"A logo"}
+        visible={{ opacity: 1, scale: 1}}
+        initial={{opacity: 0, scale: 0.5}}
+        animate={playAnimation ? "visible" : "hidden"}
+        exit={{opacity: 0, scale: 0.5}}
+        onAnimationComplete={onAnimationComplete}
+        />
     </m.div>
   );
 }
