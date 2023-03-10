@@ -114,6 +114,11 @@ MVP GET!
   |1300|end lunch|
   |1330|break for presentations|
 
+    2023/03/09
+  |time| progress |
+  |:-----:|:--------------------------------------------------------------------|
+  |1530|begin|
+
 
 ## Look into:
 Gatsby SEO -> [See documentation](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/)
