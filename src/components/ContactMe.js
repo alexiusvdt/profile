@@ -90,22 +90,24 @@ export const ContactForm = () => {
       animate={{opacity: 1}}
       transition={{ duration: 0.5}}
       >
-      <h3 style={{textAlign: "center", color: '#fff',  margin: '0', padding:'0', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
+        <div style={{ paddingLeft: '200', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', position: 'absolute', top:'0', bottom: '0', margin:'0'}}>
+      <h3 style={{textAlign: "center", color: '#fff', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
       <StyledContactForm>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
-      { showAlert && (
-          <Alert variant="success" dismissible onClose={handleAlertDismiss}>
-          Email sent successfully!</Alert>
-        )}
-      </StyledContactForm>
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
+        { showAlert && (
+            <Alert variant="success" dismissible onClose={handleAlertDismiss}>
+            Email sent successfully!</Alert>
+          )}
+        </StyledContactForm>
+      </div>
     </m.div>
     </>
   );

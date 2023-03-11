@@ -12,8 +12,9 @@ function AboutMe(){
       animate={{opacity: 1}}
       transition={{ duration: 0.5}}
       >
-       <div style ={{display: 'flex', alignItems: 'center', flexDirection: 'row'}}>
-          <div style={{ display:"flex", alignItems: "center", flexDirection: "row"}}>
+       <div style ={{display: 'flex', alignItems: 'center', flexDirection: 'row',
+        position: 'absolute', top:'0', bottom: '0', margin:'auto'}}>
+          <div>
             <P>Hi, I'm Alex, a junior developer looking to make their mark on the industry. 
               I specialize in creating user-friendly websites and mobile apps with an eye to accessability 
               as well as functionality and stability. I'm passionate about creating unique and innovative 

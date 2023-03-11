@@ -11,7 +11,7 @@ function Main(){
       >
       <div>
         <h1 style={{textAlign: 'center', justifyContent: 'center',  color: '#fff'}}>
-          This is going to be a splash animation! Wow!
+          Hi, I'm Alex!
         </h1>
       </div>
     </m.div>
