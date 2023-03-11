@@ -90,8 +90,10 @@ export const ContactForm = () => {
       animate={{opacity: 1}}
       transition={{ duration: 0.5}}
       >
-        <div style={{ paddingLeft: '200', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', position: 'absolute', top:'0', bottom: '0', margin:'0'}}>
-      <h3 style={{textAlign: "center", color: '#fff', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
+      {/* centering in another div doesn't seem to help, maybe return to m.div and set absolute positioning? */}
+      {/* style={{ paddingLeft: '200', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', position: 'absolute', top:'0', bottom: '0', margin:'0'}} */}
+      <div >
+      <h3 style={{ paddingTop: '100', textAlign: "center", color: '#fff', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
       <StyledContactForm>
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>

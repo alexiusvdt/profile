@@ -6,6 +6,18 @@
 [Research and Planning](#research-and-planning-log)
 [license](#license)
 
+## Things I learned for this project:
+* routing is fun
+* CSS/positioning is hard, especially when component design changes
+* styled components aren't as broadly applicable as I thought (interference with motion, etc)
+* planning is very critical.
+* there are endless frameworks out there that accomplish similar things, evaluating them is important, especially with how they interact (MUI & bootstrap)
+* just because something seems simple doesn't mean it will be
+
+## pain points:
+* animations
+* getting elements positioned correctly
+
 
 ## TODO
 ~~* bootstrap it~~

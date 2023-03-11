@@ -6,6 +6,7 @@ import { Icon } from '../components/icons/icon';
 const Socials = () => (
   <Div>
     <StyledSocialList>
+      {/* conditional rendering */}
       {socialMedia &&
         socialMedia.map(({url, name}, i) => (
           <li key={i}>
@@ -27,8 +28,6 @@ const Div = styled.div`
  flex-direction:row;
  position: fixed;
  bottom: 0;
-
- 
  /* this is so jank please fix it */
  margin-left: 60px;
 
@@ -60,12 +59,6 @@ const StyledSocialList = styled.ul`
     svg {
       width: 25px;
       height: 25px;
-    }
-
-    li {
-      /* &:last-of-type {
-        margin-bottom: 20px;
-      } */
     }
   }
 `
