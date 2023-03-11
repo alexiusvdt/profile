@@ -17,6 +17,7 @@
 ## pain points:
 * animations
 * getting elements positioned correctly
+* environment naming silliness
 
 
 ## TODO
