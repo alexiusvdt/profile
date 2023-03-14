@@ -18,6 +18,7 @@
 * animations
 * getting elements positioned correctly
 * environment naming silliness
+* Deploying: caps in repo vs vscode breaking deployment
 
 
 ## TODO
@@ -32,7 +33,6 @@ MVP GET!
 ~~* add animations~~
 * make initial animation play once, then have home content be static something
 * overall site styling
-* unified theme
 * optimise for mobile
 * host it
 
