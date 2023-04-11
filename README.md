@@ -1,5 +1,7 @@
 ### My portfolio
 
+https://profile-weld-two.vercel.app/
+
 ## Contents
 [TODO](#TODO)
 [Setup](#setup--installation)
@@ -43,7 +45,10 @@ MVP GET!
 * run `npm run build` & it should open in your browser
     * if it doesn't auto-open a tab, open a browser of your choice & navigate to `localhost:3000`
 
-## Research and Planning log
+<details>
+  <summary>Research & Planning Log</summary>
+
+### Daily logs
   2023/03/01
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
@@ -131,6 +136,7 @@ MVP GET!
   |time| progress |
   |:-----:|:--------------------------------------------------------------------|
   |1530|begin|
+</details>
 
 
 ## Look into:
@@ -153,9 +159,13 @@ material ui - `npm install @mui/material @emotion/react @emotion/styled`
 `npm install @framer-motion` framermotion
 
 
-## Setup/Installation
+## Setup/Installation 🚀
+   * clone this repository
+   * navigate to the parent directory in a command line
+   * enter `npm run build`
 
 ## Known Bugs
+* the styling for the panels is poorly implemented and essentially breaks the website on mobile.
 
 ## Thanks
 
@@ -163,19 +173,10 @@ material ui - `npm install @mui/material @emotion/react @emotion/styled`
 
 MIT License
 
-Copyright (c) 2023 Alex Johnson, Aitana Shough, Jennifer Holcomb, Dominik Magik, Richard Cha
+Copyright (c) 2023 Alex Johnson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
