@@ -4,8 +4,11 @@
 
 ## Contents
 [TODO](#TODO)
+
 [Setup](#setup--installation)
+
 [Research and Planning](#research-and-planning-log)
+
 [license](#license)
 
 ## Things I learned for this project:
