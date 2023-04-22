@@ -13,10 +13,10 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Main />} />
-        <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact-me" element={<ContactMe />} />
+        <Route path="/" component={<Main />} />
+        <Route path="/about-me" component={<AboutMe />} />
+        <Route path="/projects" component={<Projects />} />
+        <Route path="/contact-me" component={<ContactMe />} />
       </Routes>
     </AnimatePresence>
   );

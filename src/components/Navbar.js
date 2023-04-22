@@ -7,8 +7,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 // import Socials from "./Socials";
 
   const navigation = [
-    { name: 'About Me', href: '#', current: false },
+    { name: 'About Me', href: '/about-me/', current: true },
     { name: 'Projects', href: '#', current: false },
+    { name: 'Contact Me', href: '#', current: false },
   ]
   
   function classNames(...classes) {

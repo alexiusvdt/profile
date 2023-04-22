@@ -1,9 +1,14 @@
 import React from 'react';
-import PageControl from './PageControl';
+import Navbar from './Navbar';
+import Main from './Main';
+// import PageControl from './PageControl';
 
 function App() {
   return (
-    <PageControl />
+    <>
+      <Navbar />
+      <Main />
+    </>
   );
 }
 
