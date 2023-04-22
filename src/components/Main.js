@@ -16,7 +16,7 @@ function Main() {
     >
       <div>
         <h1 style={{ textAlign: 'center', justifyContent: 'center', color: 'black' }}>
-          Hi, I&apos;m Alex!
+          Hi, I&apos;m Alex! This is under heavy construction so please be patient!
         </h1>
       </div>
     </m.div>
