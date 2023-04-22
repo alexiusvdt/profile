@@ -6,11 +6,12 @@ import AnimatedRoutes from './AnimatedRoutes';
 
 const Pane1 = styled.div`
     /* border: 1px solid blue; */
-  width: 250px;
+  width: 100%;
+  height: 20%;
   position: absolute;
   top: 0;
-  bottom: 0;
-  background-color: black;
+  /* bottom: 0; */
+  
 `;
 
 const Pane2 = styled.div`
