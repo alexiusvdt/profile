@@ -1,25 +1,7 @@
 import React from 'react';
-import { socialMedia } from '../config';
 import styled from 'styled-components';
-import { Icon } from '../components/icons/icon';
-
-const Socials = () => (
-  <Div>
-    <StyledSocialList>
-      {/* conditional rendering */}
-      {socialMedia &&
-        socialMedia.map(({url, name}, i) => (
-          <li key={i}>
-            <a href={url} aria-label={name} target="_blank" rel="noreferrer">
-              <Icon name={name} />
-            </a>
-          </li>
-        ))}
-    </StyledSocialList>
-  </Div>
-)
-
-export default Socials;
+import { socialMedia } from '../config';
+import { Icon } from './icons/icon';
 
 // STYLING
 const Div = styled.div`
@@ -30,7 +12,6 @@ const Div = styled.div`
  bottom: 0;
  /* this is so jank please fix it */
  margin-left: 60px;
-
 `;
 
 const StyledSocialList = styled.ul`
@@ -62,3 +43,22 @@ const StyledSocialList = styled.ul`
     }
   }
 `
+
+const Socials = () => (
+  <Div>
+    <StyledSocialList>
+      {/* conditional rendering */}
+      {socialMedia &&
+        socialMedia.map(( {url, name}, i) => (
+          <li key={i}>
+            <a href={url} aria-label={name} target="_blank" rel="noreferrer">
+              <Icon name={name} />
+            </a>
+          </li>
+        ))}
+    </StyledSocialList>
+  </Div>
+);
+
+export default Socials;
+

@@ -1,12 +1,14 @@
-import React from "react";
-import PageControl from "./PageControl";
+import React from 'react';
+import Navbar from './Navbar';
+import Main from './Main';
+// import PageControl from './PageControl';
 
-
-function App(){
+function App() {
   return (
-    <div style={{backgroundColor: "black"}}>
-    <PageControl />
-    </div>
+    <>
+      <Navbar />
+      <Main />
+    </>
   );
 }
 

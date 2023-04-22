@@ -1,8 +1,9 @@
+/* eslint-disable */ 
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import { motion as m } from 'framer-motion';
-import { Alert} from 'react-bootstrap'
+import { Alert } from 'react-bootstrap';
 
 const StyledContactForm = styled.div`
   width: 400px;
@@ -52,14 +53,13 @@ const StyledContactForm = styled.div`
   }
 `;
 
-export const ContactForm = () => {
+function ContactMe() {
   const [showAlert, setShowAlert] = useState(false);
 
   const handleAlertDismiss = () => {
     setShowAlert(false);
-  }
-
-  //persist between renders
+  };
+  // persist between renders
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -70,49 +70,61 @@ export const ContactForm = () => {
       process.env.REACT_APP_TEMPLATE_ID,
       form.current,
       process.env.REACT_APP_PUBLIC_KEY,
-      )
+    )
       .then(setShowAlert(true));
-        setTimeout(() => {
-          setShowAlert(false);
-        }, 3000);
-      // .then((result) => {
-      //     console.log(result.text);
-      //     console.log("message sent");
-      // }, (error) => {
-      //     console.log(error.text);
-      // });
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+    // .then((result) => {
+    //     console.log(result.text);
+    //     console.log("message sent");
+    // }, (error) => {
+    //     console.log(error.text);
+    // });
   };
 
   return (
-    <>
     <m.div
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      transition={{ duration: 0.5}}
-      >
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* centering in another div doesn't seem to help, maybe return to m.div and set absolute positioning? */}
       {/* style={{ paddingLeft: '200', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', position: 'absolute', top:'0', bottom: '0', margin:'0'}} */}
-      <div >
-      <h3 style={{ paddingTop: '100', textAlign: "center", color: '#fff', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
-      <StyledContactForm>
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
-        { showAlert && (
-            <Alert variant="success" dismissible onClose={handleAlertDismiss}>
-            Email sent successfully!</Alert>
+      <div>
+        <h3 style={{
+          textAlign: 'center',
+          color: '#fff',
+          boxSizing: 'border-box',
+        }}
+        >
+          Hey, drop me a line!
+        </h3>
+        <StyledContactForm>
+          <form ref={form} onSubmit={sendEmail}>
+            <label>
+              Name
+              <input type="text" name="user_name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="user_email" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" />
+            </label>
+            <input type="submit" value="Send" />
+          </form>
+          { showAlert && (
+              <Alert variant="success" dismissible onClose={handleAlertDismiss}>
+              Email sent successfully!
+              </Alert>
           )}
         </StyledContactForm>
       </div>
     </m.div>
-    </>
   );
 };
 
-export default ContactForm;
+export default ContactMe;

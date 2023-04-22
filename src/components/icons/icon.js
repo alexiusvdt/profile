@@ -14,7 +14,7 @@ export const Icon = ({ name }) => {
     case 'Instagram':
       return <IconInstagram />;
     default:
-      return <p>"something's wrong here"</p>
+      return <p>something's wrong here</p>;
   }
 };
 
