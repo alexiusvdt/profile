@@ -26,12 +26,12 @@ function PageControl() {
   return (
     <Router>
       {/* I think what I want is a page component and the navbar inside this router. page will take arg as to what element it renders */}
-        <Pane1>
+      <Pane1>
         <Navbar />
-        </Pane1>
-        <Pane2>
+      </Pane1>
+      <Pane2>
         <AnimatedRoutes />
-        </Pane2>
+      </Pane2>
     </Router>
   );
 }

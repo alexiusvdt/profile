@@ -21,7 +21,7 @@ const CardBox = {
   maxHeight: '35vh',
   webkitBoxShadow: '0px 12px 18px -6px rgba(0,0,0,0.3)',
   boxShadow: '0px 12px 18px -6px rgba(0,0,0,0.3)',
-}
+};
 
 const CardGrid = {
   display: 'flex',
@@ -29,30 +29,31 @@ const CardGrid = {
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
-}
+};
 
-const renderCard = (projects, i) => {
-  return (
+const renderCard = () => {
+  const i = projects.index;
+
     <Card style={CardBox} key={i}>
-    {/* <Card.Img variant='top' src='holder.js/100px180' /> if you wanna add a header image back */}
-    <Card.Body>
-      <Card.Title>{projects.name}</Card.Title>
-      <Card.Text>{projects.blurb}</Card.Text>
-      <Button variant='secondary' onClick={() => window.open(projects.url, '_blank')}>View on GitHub</Button>
-    </Card.Body>
-    </Card>
-  )
-}
+      {/* <Card.Img variant='top' src='holder.js/100px180' /> if you wanna add a header image back */}
+      <Card.Body>
+        <Card.Title>{projects.name}</Card.Title>
+        <Card.Text>{projects.blurb}</Card.Text>
+        <Button variant="secondary" onClick={() => window.open(projects.url, '_blank')}>View on GitHub</Button>
+      </Card.Body>
+    </Card>;
+};
 
 function Projects() {
   return (
     <m.div
       // note: exit and ease properties may have ~funky~ consequences on animation
-      initial={ {opacity: 0} }
-      animate={ {opacity: 1} }
-      transition={ { duration: 0.5} }
-      >
-      <H2>Look at my projects!</H2><br />
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <H2>Look at my projects!</H2>
+      <br />
       <div style={CardGrid}>
         {projects.map(renderCard)}
       </div>

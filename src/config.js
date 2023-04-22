@@ -13,7 +13,7 @@ module.exports = {
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/ob.nixillis/',
-    }
+    },
   ],
 
   projects: [
@@ -36,7 +36,7 @@ module.exports = {
       name: 'Marquee',
       url: 'https://github.com/alexiusvdt/YourMovieDatabase',
       blurb: 'An application for users to select movies and leave ratings using ASP.NET, public API calls & a SQL database. Made for a team week project.',
-    }
-  ]
+    },
+  ],
 
-}
+};

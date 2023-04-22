@@ -6,16 +6,15 @@ import Projects from './Projects';
 import ContactMe from './ContactMe';
 import AboutMe from './AboutMe';
 
-
 function AnimatedRoutes() {
   const location = useLocation();
-  return( 
+  return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path='/' element={<Main />} />
-        <Route path='/about-me' element={<AboutMe />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact-me' element={<ContactMe />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact-me" element={<ContactMe />} />
       </Routes>
     </AnimatePresence>
   );
