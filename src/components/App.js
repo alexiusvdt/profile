@@ -1,11 +1,10 @@
-import React from "react";
-import PageControl from "./PageControl";
+import React from 'react';
+import PageControl from './PageControl';
 
-
-function App(){
+function App() {
   return (
-    <div style={{backgroundColor: "black"}}>
-    <PageControl />
+    <div style={ {backgroundColor: 'black'} }>
+      <PageControl />
     </div>
   );
 }

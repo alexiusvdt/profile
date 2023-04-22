@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
-import { BrowserRouter as Router} from "react-router-dom";
+import styled from 'styled-components';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './Navbar';
 import AnimatedRoutes from './AnimatedRoutes';
 
@@ -22,20 +22,18 @@ const Pane2 = styled.div`
   background-color: black;
 `;
 
-function PageControl(){
-
+function PageControl() {
   return (
     <Router>
       {/* I think what I want is a page component and the navbar inside this router. page will take arg as to what element it renders */}
         <Pane1>
-          <Navbar />
-        </Pane1 >
+        <Navbar />
+        </Pane1>
         <Pane2>
-          <AnimatedRoutes />
+        <AnimatedRoutes />
         </Pane2>
     </Router>
   );
 }
 
 export default PageControl;
-

@@ -1,19 +1,23 @@
-import React from "react";
-import Headshot from '../img/headshot.png';
-import styled from "styled-components";
+import React from 'react';
+import styled from 'tyled-components';
 import { motion as m } from 'framer-motion';
-
+import Headshot from '../img/headshot.png';
 
 function AboutMe(){
-  return(
-    <>
+  return (
     <m.div
-    initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      transition={{ duration: 0.5}}
+    initial={ {opacity: 0} }
+      animate={ {opacity: 1} }
+      transition={ { duration: 0.5} }
       >
-       <div style ={{display: 'flex', alignItems: 'center', flexDirection: 'row',
-        position: 'absolute', top:'0', bottom: '0', margin:'auto'}}>
+       <div style ={
+        {display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'row',
+        position: 'absolute',
+        top:'0',
+        bottom: '0',
+        margin:'auto'}}>
           <div>
             <P>Hi, I'm Alex, a junior developer looking to make their mark on the industry. 
               I specialize in creating user-friendly websites and mobile apps with an eye to accessability 
@@ -24,12 +28,11 @@ function AboutMe(){
               not only look great but also solve real-world problems for my clients!</P>
           </div>
           <div>
+            {/* this needs adjusting for mobile */}
             <img src={Headshot} width={450} height={350} alt="My headshot"></img>
           </div>
         </div> 
     </m.div>
-   
-    </>
   );
 }
 

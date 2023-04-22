@@ -84,7 +84,6 @@ export const ContactForm = () => {
   };
 
   return (
-    <>
     <m.div
       initial={{opacity: 0}}
       animate={{opacity: 1}}
@@ -93,15 +92,15 @@ export const ContactForm = () => {
       {/* centering in another div doesn't seem to help, maybe return to m.div and set absolute positioning? */}
       {/* style={{ paddingLeft: '200', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', position: 'absolute', top:'0', bottom: '0', margin:'0'}} */}
       <div >
-      <h3 style={{ textAlign: "center", color: '#fff', boxSizing:"border-box"}}>Hey, drop me a line! </h3>
+      <h3 style={ { textAlign: "center", color: '#fff', boxSizing:"border-box"} }>Hey, drop me a line! </h3>
       <StyledContactForm>
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
-          <input type="text" name="user_name" />
+            <input type="text" name="user_name" />
           <label>Email</label>
-          <input type="email" name="user_email" />
+            <input type="email" name="user_email" />
           <label>Message</label>
-          <textarea name="message" />
+            <textarea name="message" />
           <input type="submit" value="Send" />
         </form>
         { showAlert && (
@@ -111,8 +110,7 @@ export const ContactForm = () => {
         </StyledContactForm>
       </div>
     </m.div>
-    </>
   );
 };
 
-export default ContactForm;
+export default ContactMe;
