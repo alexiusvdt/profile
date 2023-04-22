@@ -53,6 +53,7 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 1.0 - released 
 
 ## Known Bugs
+* the styling for the panels is poorly implemented and essentially breaks the website on mobile.
 
 ## Thanks
 
