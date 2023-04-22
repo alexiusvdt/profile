@@ -1,9 +1,7 @@
 // this is the default theme from https://tailwindcss.com/docs/theme
 module.exports = {
   // tailwind must know about every single file in the project that contains any class names
-  content: [
-    './components/*.{html,js}'
-  ],
+  content: ['./src/**/*.{html,js}'],
   presets: [],
   darkMode: 'media', // or 'class'
   // theme holds customizations for screens, colors, and spacing as well as core plugins

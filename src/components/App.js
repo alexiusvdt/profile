@@ -3,9 +3,7 @@ import PageControl from './PageControl';
 
 function App() {
   return (
-    <div style={{ backgroundColor: 'black' }}>
-      <PageControl />
-    </div>
+    <PageControl />
   );
 }
 
