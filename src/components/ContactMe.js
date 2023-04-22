@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
@@ -52,13 +53,12 @@ const StyledContactForm = styled.div`
   }
 `;
 
-export function ContactMe() {
+function ContactMe() {
   const [showAlert, setShowAlert] = useState(false);
 
   const handleAlertDismiss = () => {
     setShowAlert(false);
-  }
-  
+  };
   // persist between renders
   const form = useRef();
 
@@ -92,15 +92,28 @@ export function ContactMe() {
       {/* centering in another div doesn't seem to help, maybe return to m.div and set absolute positioning? */}
       {/* style={{ paddingLeft: '200', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', position: 'absolute', top:'0', bottom: '0', margin:'0'}} */}
       <div>
-      <h3 style={{textAlign: 'center', color: '#fff', boxSizing: 'border-box' }}>Hey, drop me a line! </h3>
+        <h3 style={{
+          textAlign: 'center',
+          color: '#fff',
+          boxSizing: 'border-box',
+        }}
+        >
+          Hey, drop me a line!
+        </h3>
         <StyledContactForm>
           <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
+            <label>
+              Name
               <input type="text" name="user_name" />
-            <label>Email</label>
+            </label>
+            <label>
+              Email
               <input type="email" name="user_email" />
-            <label>Message</label>
+            </label>
+            <label>
+              Message
               <textarea name="message" />
+            </label>
             <input type="submit" value="Send" />
           </form>
           { showAlert && (

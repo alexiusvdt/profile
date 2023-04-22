@@ -3,6 +3,8 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Main from './Main';
 import Projects from './Projects';
+// I have no idea why this disable is needed
+// eslint-disable-next-line import/no-named-as-default
 import ContactMe from './ContactMe';
 import AboutMe from './AboutMe';
 
