@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import { BrowserRouter as Router} from "react-router-dom";
-import Sidebar from './Sidebar';
+import Navbar from './Navbar';
 import AnimatedRoutes from './AnimatedRoutes';
 
 const Pane1 = styled.div`
@@ -27,7 +27,7 @@ function PageControl(){
   return (
     <Router>
         <Pane1>
-          <Sidebar />
+          <Navbar />
         </Pane1 >
         <Pane2>
           <AnimatedRoutes />
