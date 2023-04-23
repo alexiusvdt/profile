@@ -13,9 +13,8 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 ## TODO
 * overall site styling
 * optimise for mobile
-* improve routing
 * make content more dynamic
-* add loading animations
+* add better loading animations
 * remove emailjs & implement my own mail routing
 * add biking section or other personal interest sections w/maps?
 
@@ -31,6 +30,8 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 ~~* add animations~~
 ~~* host it~~
 * V1.0  deployed
+~~* implement better styling tools~~
+~~* improve routing~~
 
 
 ## Setup & Installation
@@ -53,7 +54,7 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 1.0 - released 
 
 ## Known Bugs
-* the styling for the panels is poorly implemented and essentially breaks the website on mobile.
+* routing breaks on the about me page
 
 ## Thanks
 

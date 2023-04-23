@@ -1,15 +1,8 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import styled from 'styled-components';
 import { motion as m } from 'framer-motion';
 import { projects } from '../config';
-
-// STYLING
-const H2 = styled.h2`
-  text-align: center;
-  color: #fff;
-`;
 
 const CardBox = {
   width: '18rem',
@@ -52,7 +45,7 @@ function Projects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <H2>Look at my projects!</H2>
+      <h2>Look at my projects!</h2>
       <br />
       <div style={CardGrid}>
         {projects.map(renderCard)}
