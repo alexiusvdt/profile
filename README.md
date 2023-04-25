@@ -54,7 +54,7 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 1.0 - released 
 
 ## Known Bugs
-* routing breaks on the about me page
+* routing not functional in hamburger menu mode
 
 ## Thanks
 

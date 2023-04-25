@@ -14,10 +14,9 @@ function Main() {
         ease: 'easeOut',
       }}
     >
-      <div>
-        <h1 style={{ textAlign: 'center', justifyContent: 'center', color: 'black' }}>
-          Hi, I&apos;m Alex! This is under heavy construction so please be patient!
-        </h1>
+      <div className="text-center z-10">
+        <h2>Hi, I&apos;m Alex!</h2>
+        <p>Dont mind the dust, this is still a work in progress, after all!</p>
       </div>
     </m.div>
   );
