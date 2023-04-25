@@ -41,6 +41,7 @@ function ContactMe() {
       transition={{ duration: 0.5 }}
     >
       <div>
+        {/* replace with tailwind */}
         <h3 style={{
           textAlign: 'center',
           color: '#000',
