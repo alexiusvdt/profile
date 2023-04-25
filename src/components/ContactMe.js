@@ -1,58 +1,9 @@
-/* eslint-disable */ 
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import styled from 'styled-components';
 import { motion as m } from 'framer-motion';
 import { Alert } from 'react-bootstrap';
 
-const StyledContactForm = styled.div`
-  width: 400px;
-  margin: auto;
-  color: white;
-  form {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    font-size: 16px;
-    input {
-      width: 100%;
-      height: 35px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-    textarea {
-      max-width: 100%;
-      min-width: 100%;
-      width: 100%;
-      max-height: 100px;
-      min-height: 100px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-    label {
-      margin-top: 1rem;
-    }
-    input[type="submit"] {
-      margin-top: 2rem;
-      cursor: pointer;
-      background: rgb(249, 105, 14);
-      color: white;
-      border: none;
-    }
-  }
-`;
-
+// needs a little padding between elements but this is functional
 function ContactMe() {
   const [showAlert, setShowAlert] = useState(false);
 
@@ -89,42 +40,28 @@ function ContactMe() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      {/* centering in another div doesn't seem to help, maybe return to m.div and set absolute positioning? */}
-      {/* style={{ paddingLeft: '200', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', position: 'absolute', top:'0', bottom: '0', margin:'0'}} */}
       <div>
         <h3 style={{
           textAlign: 'center',
-          color: '#fff',
+          color: '#000',
           boxSizing: 'border-box',
         }}
         >
           Hey, drop me a line!
         </h3>
-        <StyledContactForm>
-          <form ref={form} onSubmit={sendEmail}>
-            <label>
-              Name
-              <input type="text" name="user_name" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="user_email" />
-            </label>
-            <label>
-              Message
-              <textarea name="message" />
-            </label>
-            <input type="submit" value="Send" />
+        <div className="w-96 mx-auto text-white">
+          <form className="flex flex-col items-start w-full text-base" ref={form} onSubmit={sendEmail}>
+            <input className="w-full h-9 px-3 text-black rounded-md border border-gray-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500" type="text" placeholder="Enter your email" name="user_email" />
+            <input className="w-full h-9 px-3 text-black rounded-md border border-gray-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500" type="text" placeholder="Enter your name" name="user_name" />
+            <textarea className="w-full h-32 px-3 py-2 mt-2 text-black rounded-md border border-gray-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500" placeholder="Enter your message" name="message" />
+            {/* <label className="mt-4">Subscribe to our newsletter:</label> */}
+            <input className="mt-4 cursor-pointer bg-orange-500 text-white py-2 px-4 rounded" type="submit" value="Send" />
           </form>
-          { showAlert && (
-              <Alert variant="success" dismissible onClose={handleAlertDismiss}>
-              Email sent successfully!
-              </Alert>
-          )}
-        </StyledContactForm>
+          { showAlert && (<Alert variant="success" dismissible onClose={handleAlertDismiss}>Email sent successfully!</Alert>)}
+        </div>
       </div>
     </m.div>
   );
-};
+}
 
 export default ContactMe;

@@ -1,50 +1,28 @@
+/* eslint-disable */ 
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+// import { Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import styled from 'styled-components';
 import { motion as m } from 'framer-motion';
 import { projects } from '../config';
 
-// STYLING
-const H2 = styled.h2`
-  text-align: center;
-  color: #fff;
-`;
-
-const CardBox = {
-  width: '18rem',
-  margin: '19px',
-  backgroundColor: '#ffffff',
-  borderRadius: '10px 10px 10px 10px',
-  overflow: 'Hidden',
-  height: 'flex',
-  maxHeight: '35vh',
-  webkitBoxShadow: '0px 12px 18px -6px rgba(0,0,0,0.3)',
-  boxShadow: '0px 12px 18px -6px rgba(0,0,0,0.3)',
-};
-
-const CardGrid = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  flexDirection: 'row',
-  alignItems: 'center',
-  justifyContent: 'center',
-};
-
+// bootstrap elements are breaking (i'm assuming due to tailwind)
+// elements have been converted, but this may need a rewrite as nothing is rendering
 const renderCard = () => {
   const i = projects.index;
 
-    <Card style={CardBox} key={i}>
-      {/* <Card.Img variant='top' src='holder.js/100px180' /> if you wanna add a header image back */}
-      <Card.Body>
-        <Card.Title>{projects.name}</Card.Title>
-        <Card.Text>{projects.blurb}</Card.Text>
-        <Button variant="secondary" onClick={() => window.open(projects.url, '_blank')}>View on GitHub</Button>
-      </Card.Body>
-    </Card>;
+  <div className='w-72 md:w-80 mx-4 bg-white rounded-lg overflow-hidden h-auto max-h-96 shadow-lg' key={i}> 
+    <div className='p-4'>
+    <h3 className='text-lg font-bold mb-2'>{projects.name}</h3>
+    <p className='text-gray-700'>{projects.blurb}</p>
+    <button className='bg-gray-800 text-white px-4 py-2 rounded-lg mt-4' onClick={() => window.open(projects.url, '_blank')}>
+      View on GitHub
+    </button>
+  </div>
+</div>;
 };
 
 function Projects() {
+  console.log('you hit the project component');
   return (
     <m.div
       // note: exit and ease properties may have ~funky~ consequences on animation
@@ -52,9 +30,9 @@ function Projects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <H2>Look at my projects!</H2>
+      <h2>Look at my projects!</h2>
       <br />
-      <div style={CardGrid}>
+      <div className='flex flex-wrap justify-center items-center'>
         {projects.map(renderCard)}
       </div>
     </m.div>

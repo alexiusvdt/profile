@@ -1,15 +1,16 @@
 /* eslint-disable */ 
 import React, { Fragment } from 'react';
-// import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 // import styled from "styled-components";
 // import Socials from "./Socials";
 
   const navigation = [
-    { name: 'About Me', href: '/about-me/', current: true },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Contact Me', href: '#', current: false },
+    { name: 'Home', path: '/', current: true },
+    { name: 'About Me', path: '/about-me', current: false },
+    { name: 'Projects', path: '/projects', current: false },
+    { name: 'Contact Me', path: '/contact-me', current: false },
   ]
   
   function classNames(...classes) {
@@ -17,6 +18,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
   }
   
 export default function Navbar() {
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -50,9 +52,9 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link 
+                        to={item.path}
                         key={item.name}
-                        href={item.href}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
@@ -60,7 +62,7 @@ export default function Navbar() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

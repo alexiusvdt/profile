@@ -1,16 +1,9 @@
 /* eslint-disable */ 
 import React from 'react';
-import styled from 'styled-components';
 import { motion as m } from 'framer-motion';
 import Headshot from '../img/headshot.png';
 
-// STYLE
-const P = styled.p`
-  text-align: center;
-  color: #fff;
-  justify-content: center;
-`;
-
+// there's something about this page that breaks routing. you can click into it, but all other nav links are disabled
 function AboutMe() {
   return (
     <m.div
@@ -29,16 +22,15 @@ function AboutMe() {
       }}
       >
         <div>
-          
-          <P>
-            Hi, I`&apos;`m Alex, a junior developer looking to make their mark on the industry. I specialize in creating user-friendly websites and mobile apps with an eye to accessability as well as functionality and stability. I`&apos;`m passionate about creating unique and innovative applications that help businesses achieve their goals. In my free time, I enjoy exploring new technologies, riding my bicycle (currently training for
+          <p>
+            Hi, I&apos;m Alex, a junior developer looking to make their mark on the industry. I specialize in creating user-friendly websites and mobile apps with an eye to accessability as well as functionality and stability. I`&apos;`m passionate about creating unique and innovative applications that help businesses achieve their goals. In my free time, I enjoy exploring new technologies, riding my bicycle (currently training for
             <a href="https://ridetherimoregon.com/" target="_blank" rel="noreferrer">Ride The Rim Oregon</a>)
             and playing tabletop role playing games with my friends. My ultimate goal is to create things that not only look great but also solve real-world problems for my clients!
-          </P>
+          </p>
         </div>
         <div>
           {/* this needs adjusting for mobile */}
-          <img src={Headshot} width={450} height={350} alt="My headshot" />
+          <img src={Headshot} width={500} height={550} alt="My headshot" />
         </div>
       </div>
     </m.div>
