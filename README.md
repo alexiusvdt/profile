@@ -50,7 +50,7 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 - framer motion
 - tailwindcss
 - react tilt
-<!-- - react hot toast  -->
+- react hot toast 
 ## Versions
 1.0 - released 
 
