@@ -44,8 +44,10 @@ function ContactMe() {
         {/* replace with tailwind */}
         <h3 style={{
           textAlign: 'center',
-          color: '#000',
+          color: 'white',
           boxSizing: 'border-box',
+          paddingBottom: 10,
+          paddingTop: 25,
         }}
         >
           Hey, drop me a line!

@@ -11,7 +11,7 @@ import Background from '../img/background.jpg';
 function AnimatedRoutes() {
   const location = useLocation();
   return (
-    <div className="bg-cover bg-center min-h-screen" style={{ backgroundImage: { Background } }}>
+    <div className="bg-cover bg-center min-h-screen text-white" style={{ backgroundImage: { Background } }}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Main />} />
         <Route path="/about-me" element={<AboutMe />} />
