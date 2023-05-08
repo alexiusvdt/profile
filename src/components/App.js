@@ -1,14 +1,12 @@
 import React from 'react';
-// import Navbar from './Navbar';
-// import Main from './Main';
 import PageControl from './PageControl';
+import Background from '../img/background.jpg';
 
 function App() {
   return (
-    <>
-      {/* <Navbar /> */}
+    <div style={{ backgroundImage: `url(${Background})` }}>
       <PageControl />
-    </>
+    </div>
   );
 }
 
