@@ -4,10 +4,15 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 
 ## Contents
 [TODO](#TODO)
+
 [Done](#done)
+
 [Setup](#setup-&-installation)
+
 [New tech](#new-tech)
+
 [Thanks](#thanks)
+
 [license](#license)
 
 ## TODO

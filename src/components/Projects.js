@@ -21,7 +21,7 @@ const renderCard = (projects) => {
 
   return (
     <Tilt options={defaultOptions}>
-      <div className="w-72 md:w-80 mx-4 bg-white rounded-lg overflow-hidden h-auto max-h-96 shadow-lg" key={i}>
+      <div className="w-72 md:w-80 mx-4 bg-white rounded-lg overflow-hidden h-auto max-h-96 shadow-lg py-5" key={i}>
         <div className="p-4">
           <h3 className="text-lg font-bold text-black mb-2">{projects.name}</h3>
           <p className="text-gray-700">{projects.blurb}</p>
