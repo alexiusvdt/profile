@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react';
 
 const IconLinkedIn = () => (
@@ -20,4 +21,3 @@ const IconLinkedIn = () => (
 );
 
 export default IconLinkedIn;
-

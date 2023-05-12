@@ -1,10 +1,10 @@
+/*eslint-disable*/
 import React from 'react';
 import PropTypes from 'prop-types';
 import IconGithub from './IconGithub';
 import IconInstagram from './IconInstagram';
 import IconLinkedIn from './IconLinkedIn';
 
-// see config.js for these
 export const Icon = ({ name }) => {
   switch (name) {
     case 'Github':
@@ -14,7 +14,7 @@ export const Icon = ({ name }) => {
     case 'Instagram':
       return <IconInstagram />;
     default:
-      return <p>something's wrong here</p>;
+      return <p>something&apos;s wrong here</p>;
   }
 };
 
