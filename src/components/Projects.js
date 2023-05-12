@@ -24,10 +24,12 @@ const renderCard = (projects) => {
       <div className="w-72 md:w-80 mx-4 bg-white rounded-lg overflow-hidden h-auto max-h-96 shadow-lg py-5" key={i}>
         <div className="p-4">
           <h3 className="text-lg font-bold text-black mb-2">{projects.name}</h3>
-          <p className="text-gray-700">{projects.blurb}</p>
+          <p className="text-blue-400 text-sm">{projects.features}</p>
+          <p className="text-gray-700">{projects.blurb}</p>          
           <button type="submit" className="bg-gray-800 text-white px-4 py-2 rounded-lg mt-4" onClick={() => window.open(projects.url, '_blank')}>
             View on GitHub
           </button>
+          
         </div>
       </div>
     </Tilt>
