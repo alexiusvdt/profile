@@ -21,7 +21,7 @@ module.exports = {
       name: 'Help Queue',
       url: 'https://github.com/alexiusvdt/help-queue-hooks',
       blurb: 'A help ticket queue using React that stores tickets in a firestore database.',
-      features: 'Javascript',
+      features: 'Javascript, React',
     },
     {
       name: 'To Do List',
