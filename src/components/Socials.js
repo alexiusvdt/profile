@@ -1,63 +1,22 @@
+/*eslint-disable*/
 import React from 'react';
-import styled from 'styled-components';
 import { socialMedia } from '../config';
 import { Icon } from './icons/icon';
 
-// STYLING
-const Div = styled.div`
- display:flex;
- align-items: center;
- flex-direction:row;
- position: fixed;
- bottom: 0;
- /* this is so jank please fix it */
- margin-left: 60px;
-`;
-
-const StyledSocialList = styled.ul`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 1px;
-  padding: 1px;
-  list-style: none;
-
-  &:after {
-    display: block;
-    width: 2px;
-    height: 90px;
-    margin: auto;
-    background-color: #747474;
-  }
-
-  a {
-    padding: 10px;
-    &:hover,
-    &:focus {
-      transform: translateY(5px);
-    }
-
-    svg {
-      width: 25px;
-      height: 25px;
-    }
-  }
-`
-
 const Socials = () => (
-  <Div>
-    <StyledSocialList>
-      {/* conditional rendering */}
+  <div className="fixed bottom-0 left-0 flex flex-row items-center">
+    <ul className="flex flex-row items-center m-5 p-5 list-none">
+      
       {socialMedia &&
         socialMedia.map(( {url, name}, i) => (
-          <li key={i}>
-            <a href={url} aria-label={name} target="_blank" rel="noreferrer">
+          <li key={i} className="after:block after:w-5 after:h-90 after:m-auto after:bg-gray-600 hover:focus:translate-y-5">
+            <a href={url} aria-label={name} target="_blank" rel="noreferrer" className="p-3">
               <Icon name={name} />
             </a>
           </li>
         ))}
-    </StyledSocialList>
-  </Div>
+    </ul>
+  </div>
 );
 
 export default Socials;
