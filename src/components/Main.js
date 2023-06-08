@@ -1,25 +1,57 @@
-import React from 'react';
-import { motion as m } from 'framer-motion';
+/*eslint-disable*/
+import React, { Suspense, useRef, useState, useEffect } from 'react';
+import * as THREE from 'three';
+import { Canvas, extend, useFrame, useLoader, useThree } from '@react-three/fiber';
+import { useSpring, a } from '@react-spring/web';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import { motion as m } from 'framer-motion';
 
-function Main() {
-  return (
-    <m.div
-      initial={{ y: '100vh' }}
-      animate={{ y: '50vh' }}
-      transition={{
-        type: 'spring',
-        stiffness: 100,
-        damping: 20,
-        duration: 1,
-        ease: 'easeOut',
-      }}
-    >
-      <div className="text-center z-10">
-        <h2>Hi, I&apos;m Alex!</h2>
-        <p>Dont mind the dust, this is still a work in progress, after all!</p>
-      </div>
-    </m.div>
-  );
+const selectedHexColor = 0xffd5c3;
+ 
+// Not neccesary but this provides free control on rotation, zooming, etc.
+extend({ OrbitControls });
+ 
+const Controls = (props) => {
+ const { autoRotate } = props;
+ const orbitRef = useRef();
+ const { camera, gl } = useThree();
+ 
+ useFrame(() => orbitRef.current.update());
+ 
+ return (
+   <orbitControls
+     autoRotate={!!autoRotate}
+     args={[camera, gl.domElement]}
+     ref={orbitRef}
+   />
+ )
+}
+ 
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+
+const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+
+camera.position.z = 5;
+
+function animate() {
+
+	requestAnimationFrame( animate );
+
+	cube.rotation.x += 0.01;
+	cube.rotation.y += 0.01;
+
+	renderer.render( scene, camera );
+
 }
 
-export default Main;
+animate();
+
+export default animate
