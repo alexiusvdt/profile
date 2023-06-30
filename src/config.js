@@ -18,6 +18,12 @@ module.exports = {
 
   projects: [
     {
+      name: 'Learning Log',
+      url: "https://github.com/alexiusvdt/profile.git",
+      blurb: "CRUD application for storing notes & associated items",
+      features: 'python, django',
+    },
+    {
       name: 'Help Queue',
       url: 'https://github.com/alexiusvdt/help-queue-hooks',
       blurb: 'A help ticket queue using React that stores tickets in a firestore database.',
@@ -42,5 +48,4 @@ module.exports = {
       features: '.NET6, SQL',
     },
   ],
-
 };
