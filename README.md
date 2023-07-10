@@ -1,7 +1,6 @@
 ### My portfolio
 Here's my portfolio. A simple page that shows off myself and my projects. 
 
-
 ## Contents
 [TODO](#TODO)
 
@@ -21,23 +20,6 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 * make content more dynamic
 * add better loading animations
 * remove emailjs & implement my own mail routing
-* add biking section or other personal interest sections w/maps?
-
-
-## Done
-~~* bootstrap it~~
-~~* set up component framework~~
-~~* establish page control~~
-~~* add a splashy main page (some kind of animation)~~
-~~* add/style sidebar links~~
-~~* add socials quicklinks to sidebar~~
-~~* add email sent confirmation on formsbubmit~~
-~~* add animations~~
-~~* host it~~
-* V1.0  deployed
-~~* implement better styling tools~~
-~~* improve routing~~
-
 
 ## Setup & Installation
 * clone this repo
@@ -46,16 +28,6 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 * run `npm run build` & it should open in your browser
     * if it doesn't auto-open a tab, open a browser of your choice & navigate to `localhost:3000`
 
-
-## notes/reminders:
-* .env must be in the root folder & vars prefixed with REACT_APP_, all in caps
-
-## New tech:
-- emailjs
-- framer motion
-- tailwindcss
-- react tilt
-- react hot toast 
 ## Versions
 1.0 - released 
 
