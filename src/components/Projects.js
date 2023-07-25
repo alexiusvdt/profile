@@ -1,23 +1,24 @@
 /* eslint-disable */
 import React, { useState }from 'react';
-import { motion as m } from 'framer-motion';
 import { projects } from '../config';
 import { Tilt } from 'react-tilt';
 
-const renderCard = (projects) => {
-  const i = projects.index;
+// export default function Projects({ title, subtitle, dark, id }) {
+  const renderCard = (projects) => {
+    const i = projects.index;
+  
+    const defaultOptions = {
+      reverse:        false,  // reverse the tilt direction
+      max:            35,     // max tilt rotation (degrees)
+      perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
+      scale:          1.1,    // 2 = 200%, 1.5 = 150%, etc..
+      speed:          1000,   // Speed of the enter/exit transition
+      transition:     true,   // Set a transition on enter/exit.
+      axis:           null,   // What axis should be disabled. Can be X or Y.
+      reset:          true,    // If the tilt effect has to be reset on exit.
+      easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+    }
 
-  const defaultOptions = {
-    reverse:        false,  // reverse the tilt direction
-    max:            35,     // max tilt rotation (degrees)
-    perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-    scale:          1.1,    // 2 = 200%, 1.5 = 150%, etc..
-    speed:          1000,   // Speed of the enter/exit transition
-    transition:     true,   // Set a transition on enter/exit.
-    axis:           null,   // What axis should be disabled. Can be X or Y.
-    reset:          true,    // If the tilt effect has to be reset on exit.
-    easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-  }
 
   return (
     <Tilt options={defaultOptions}>
@@ -36,21 +37,17 @@ const renderCard = (projects) => {
   );
 };
 
-function Projects() {
+function Projects({ title, subtitle, dark, id }) {
   return (
-    <m.div
-      // note: exit and ease properties may have ~funky~ consequences on animation
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <h2 className="flex flex-wrap justify-center items-center py-10">Here are some of my projects:</h2>
-      <br />
-      <div className="flex flex-wrap justify-center items-center">
+    <div className={"section" + (dark ? " section-dark" : "")}>
+      <div className="section-content" id={id}>
+      <h1>{title}</h1>
+        <div className="flex flex-wrap justify-center items-center">
         {projects.map(renderCard)}
+        </div>
       </div>
-    </m.div>
+    </div>
   );
 }
 
-export default Projects;
+export default Projects
