@@ -1,7 +1,6 @@
 /* eslint-disable */
 
-import React, { Component } from "react";
-import logo from "../logo.svg";
+import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
@@ -13,12 +12,15 @@ const scrollToTop = () => {
   return (
       <nav className="nav" id="navbar" >
         <div className="nav-content">
+          <div className="flex flex-shrink-0 items-center">
           <img
-            src={logo}
-            className="nav-logo"
-            alt="Logo"
+            style={{height: 80, width: 80}}
+            className="block h-8 w-auto lg:hidden"
+            src="https://freesvg.org/img/black_cat_black_and_white.png"
+            alt="logo"
             onClick={scrollToTop}
           />
+          </div>
           <ul className="nav-items">
             <li className="nav-item">
               <Link
@@ -70,7 +72,7 @@ const scrollToTop = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
+              {/* <Link
                 activeClass="active"
                 to="section5"
                 spy={true}
@@ -79,7 +81,7 @@ const scrollToTop = () => {
                 duration={500}
               >
                 Section 5
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </div>

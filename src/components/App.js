@@ -4,13 +4,16 @@ import React, { useEffect } from "react";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import Projects from "./Projects";
-// import Section from "./Section";
 import Navbar from "./Navbar";
-import Socials from "./Socials";
 import Skills from "./Skills";
 // Scrolling
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+// import * as Scroll from 'react-scroll';
+// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+// testing
+// import Section from "./Section";
+// laterbase
+// // import Socials from "./Socials";
+
 
 const App = () => {
   return (
