@@ -20,10 +20,11 @@ const App = () => {
 
   return (
     // all the pagelets in order
-    <div className="h-72 bg-gradient-to-r from-purple-600 to-blue-600">
+    <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
       <Navbar />
-      <Section/>
+      {/* <Section/> */}
       <AboutMe />
+      {/* <Skills /> */}
       <Projects />
       {/* socials might get moved into navbar/turned into footer segment */}
       <Socials />

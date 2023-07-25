@@ -7,6 +7,7 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 [Setup](#setup-&-installation)
 
 [Thanks](#thanks)
+[Notes](#notes)
 [Known Issues](#known-bugs)
 
 [license](#license)
@@ -28,6 +29,8 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 ## Versions
 1.0 - released 
 
+## Notes
+For whatever reason the default Tailwind behavior (cfg file -> dist/output -> import via html) ALWAYS errors with :MIME type html/text not html/css. Directly importing css file into index.js now
 ## Known Bugs
 
 ## Thanks

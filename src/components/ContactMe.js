@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { motion as m } from 'framer-motion';
 import toast, { Toaster } from 'react-hot-toast';
 
 function ContactMe() {
@@ -41,11 +40,7 @@ function ContactMe() {
   };
 
   return (
-    <m.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <>
       <Toaster position="top-center" />
       <div>
         <h3 className="text-center text-white box-border px-10 pb-10 pt-25">Hey, drop me a line!</h3>
@@ -59,7 +54,7 @@ function ContactMe() {
           </form>
         </div>
       </div>
-    </m.div>
+    </>
   );
 }
 
