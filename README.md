@@ -4,21 +4,18 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 ## Contents
 [TODO](#TODO)
 
-[Done](#done)
-
 [Setup](#setup-&-installation)
 
-[New tech](#new-tech)
-
 [Thanks](#thanks)
+[Known Issues](#known-bugs)
 
 [license](#license)
 
 ## TODO
+* complete retrofit
+  * prune old packages
 * overall site styling
 * optimise for mobile
-* make content more dynamic
-* add better loading animations
 * remove emailjs & implement my own mail routing
 
 ## Setup & Installation
@@ -32,7 +29,6 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 1.0 - released 
 
 ## Known Bugs
-* routing not functional in hamburger menu mode
 
 ## Thanks
 * Background image by <a href="https://www.freepik.com/free-vector/abstract-technological-background_13182208.htm#query=technology%20background&position=25&from_view=keyword&track=ais">Freepik</a>
