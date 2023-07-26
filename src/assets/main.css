@@ -95,7 +95,7 @@ display:none;
 }
 
 .slider {
-background-color: #ccc;
+background-color: #151515;
 bottom: 0;
 cursor: pointer;
 left: 0;
@@ -117,7 +117,7 @@ width: 26px;
 }
 
 input:checked + .slider {
-background-color: #2b2b2b;
+background-color: #8c8a8a;
 }
 
 input:checked + .slider:before {

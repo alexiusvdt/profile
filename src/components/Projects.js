@@ -3,7 +3,6 @@ import React, { useState }from 'react';
 import { projects } from '../config';
 import { Tilt } from 'react-tilt';
 
-// export default function Projects({ title, subtitle, dark, id }) {
   const renderCard = (projects) => {
     const i = projects.index;
   
