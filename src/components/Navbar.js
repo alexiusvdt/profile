@@ -74,7 +74,7 @@ const Navbar = (props) => {
             </li>
             <li className="nav-item">
               <div className="switch">
-                <label class="theme-switch" htmlFor="checkbox">
+                <label className="theme-switch" htmlFor="checkbox">
                 <input type="checkbox" id="checkbox" onClick={props.toggleDarkMode} />
                 <div className="slider round"></div>
                 </label>
