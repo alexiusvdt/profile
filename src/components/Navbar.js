@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import {FaToggleOn, FaToggleOff} from 'react-icons/fa';
-
+import blackcat from "../img/black_cat.png";
+import whitecat from "../img/white_cat.png";
 const Navbar = (props) => {
 
   const scrollToTop = () => {
@@ -16,7 +16,8 @@ const Navbar = (props) => {
           <img
             style={{height: 80, width: 80}}
             className="block h-8 w-auto lg:hidden"
-            src="https://freesvg.org/img/black_cat_black_and_white.png"
+            // not working how I want it to :/
+            src = {props.darkMode ? {blackcat} : {whitecat}}
             alt="logo"
             onClick={scrollToTop}
           />
@@ -31,7 +32,7 @@ const Navbar = (props) => {
                 offset={-70}
                 duration={500}
               >
-                About Me
+                About Me 
               </Link>
             </li>
             <li className="nav-item">
@@ -72,9 +73,12 @@ const Navbar = (props) => {
               </Link>
             </li>
             <li className="nav-item">
-            <img onClick={props.toggleDarkMode} 
-                 className="self-left justify-self-end" 
-                 src={props.darkMode ? <FaToggleOn /> : <FaToggleOff />} />
+              <div className="switch">
+                <label class="theme-switch" htmlFor="checkbox">
+                <input type="checkbox" id="checkbox" onClick={props.toggleDarkMode} />
+                <div className="slider round"></div>
+                </label>
+              </div>
               {/* <Link
                 activeClass="active"
                 to="section5"
