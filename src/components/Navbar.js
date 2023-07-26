@@ -1,13 +1,13 @@
 /* eslint-disable */
-
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import {FaToggleOn, FaToggleOff} from 'react-icons/fa';
 
+const Navbar = (props) => {
 
-const Navbar = () => {
-const scrollToTop = () => {
+  const scrollToTop = () => {
   scroll.scrollToTop();
-};
+  };
 
   return (
       <nav className="nav" id="navbar" >
@@ -72,6 +72,9 @@ const scrollToTop = () => {
               </Link>
             </li>
             <li className="nav-item">
+            <img onClick={props.toggleDarkMode} 
+                 className="self-left justify-self-end" 
+                 src={props.darkMode ? <FaToggleOn /> : <FaToggleOff />} />
               {/* <Link
                 activeClass="active"
                 to="section5"

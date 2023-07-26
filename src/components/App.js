@@ -1,6 +1,5 @@
 /* eslint-disable */
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import Projects from "./Projects";
@@ -16,33 +15,43 @@ import Skills from "./Skills";
 
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(true);
+
+  function toggleDarkMode() {
+    setDarkMode(prevDarkMode => !prevDarkMode)
+}
+ 
   return (
-    <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
-      <Navbar/>
+    <div className={`h-full w-full mx-auto py-2 
+                    ${darkMode ? "dark" : "light"}`}
+    >
+    {/* <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10"> */}
+      <Navbar
+        darkMode={darkMode} 
+        toggleDarkMode={toggleDarkMode}
+        />
       <AboutMe
           title="About Me"
-          // subtitle={dummyText}
-          dark={true}
+          darkMode={darkMode} 
           id="aboutme"
         />
       <Skills 
           title="Skills" 
-          dark={true}
+          darkMode={darkMode} 
           id="skills"
-      />
+        />
       <Projects
           title="Projects" 
-          dark={true}
+          darkMode={darkMode} 
           id="projects"
         />
-      
       <ContactMe 
           title="Contact Me" 
-          dark={true}
+          darkMode={darkMode} 
           id="contactme"
       />
     </div>
-
+  // </div>
 // socials might get moved into navbar/turned into footer segment
 //<Socials />
 
