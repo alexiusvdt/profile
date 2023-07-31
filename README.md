@@ -30,8 +30,9 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 1.0 - released 
 
 ## Notes
-For whatever reason the default Tailwind behavior (cfg file -> dist/output -> import via html) ALWAYS errors with :MIME type html/text not html/css. Directly importing css file into index.js now
+
 ## Known Bugs
+* some legacy packages are still included & will be removed in further releases
 
 ## Thanks
 * Background image by <a href="https://www.freepik.com/free-vector/abstract-technological-background_13182208.htm#query=technology%20background&position=25&from_view=keyword&track=ais">Freepik</a>

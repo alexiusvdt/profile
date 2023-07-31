@@ -13,14 +13,23 @@ const Navbar = (props) => {
       <nav className="nav" id="navbar" >
         <div className="nav-content">
           <div className="flex flex-shrink-0 items-center">
+          { props.darkMode ?
           <img
+            src = {whitecat}
             style={{height: 80, width: 80}}
             className="block h-8 w-auto lg:hidden"
-            // not working how I want it to :/
-            src = {props.darkMode ? {blackcat} : {whitecat}}
             alt="logo"
             onClick={scrollToTop}
           />
+          :
+          <img 
+            src = {blackcat}
+            style={{height: 80, width: 80}}
+            className="block h-8 w-auto lg:hidden"
+            alt="logo"
+            onClick={scrollToTop}
+          />
+        }
           </div>
           <ul className="nav-items">
             <li className="nav-item">
@@ -28,7 +37,7 @@ const Navbar = (props) => {
                 activeClass="active"
                 to="aboutme"
                 spy={true}
-                smooth={true}
+                smooth='easeInQuart'
                 offset={-70}
                 duration={500}
               >
@@ -65,9 +74,10 @@ const Navbar = (props) => {
                 activeClass="active"
                 to="contactme"
                 spy={true}
-                smooth={true}
+                smooth='linear'
                 offset={-70}
                 duration={500}
+                delay={100}
               >
                 Contact Me
               </Link>

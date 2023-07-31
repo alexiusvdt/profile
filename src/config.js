@@ -18,6 +18,12 @@ module.exports = {
 
   projects: [
     {
+      name: 'Storefront',
+      url: 'https://github.com/alexiusvdt/storefront',
+      blurb: 'A virtual store with database, queryable endpoints, and react front end',
+      features: 'Django, Python, React, In-progress',
+    },
+    {
       name: 'Help Queue',
       url: 'https://github.com/alexiusvdt/help-queue-hooks',
       blurb: 'A help ticket queue using React that stores tickets in a firestore database.',
@@ -30,10 +36,10 @@ module.exports = {
       features: '.NET6, SQL',
     },
     {
-      name: "Avery's Organics",
-      url: 'https://github.com/alexiusvdt/farmers-market',
-      blurb: 'A client for users to view what and where Avery will be selling their produce based on a given date',
-      features: 'Javascript, React',
+      name: 'Alien Game',
+      url: 'hhttps://github.com/alexiusvdt/alien-game',
+      blurb: 'A clone of alien invaders, complete with leaderboard and scaling difficulty',
+      features: 'Python',
     },
     {
       name: 'Marquee',
