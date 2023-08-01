@@ -5,6 +5,7 @@ import ContactMe from "./ContactMe";
 import Projects from "./Projects";
 import Navbar from "./Navbar";
 import Skills from "./Skills";
+import Socials from "./Socials";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 
@@ -74,6 +75,11 @@ const App = () => {
           darkMode={darkMode} 
           id="contactme"
       />
+        <footer className="p-3 text-center">
+        {/* <h6 className="mb-3">Alex Johnson</h6> */}
+        <p>Thanks for stopping by!</p>
+        <Socials />
+      </footer>
     </div>
   // </div>
 // socials might get moved into navbar/turned into footer segment
