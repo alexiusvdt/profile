@@ -9,8 +9,6 @@ import reactlogo from "./img/react.svg";
 import csharp from "./img/csharp.svg";
 
 
-// 1old 
-// module.exports = {
 export const config = {
   email: 'alex.johnson293@gmail.com',
   socialMedia: [

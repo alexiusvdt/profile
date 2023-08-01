@@ -69,28 +69,28 @@
   cursor: pointer;
 }
 
-.section {
+/* .section {
 
 }
 
 .section-dark {
   background: #333;
   color: white;
-}
+} */
 
-.section-content {
+/* .section-content { */
   /* display: flex; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   
   /* top: 50%; */
   /* left: 50%; */
   /* position: auto; */
-  padding: 20px;
+  /* padding: 20px;
   width: 100%;
-  justify-content: space-between;
-}
+  justify-content: space-between; */
+/* } */
 
 .nav-item > .active {
   border-bottom: 1px solid #333;
@@ -167,6 +167,7 @@ border-radius: 50%;
   width: 100vw;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .project-card {
@@ -176,6 +177,7 @@ border-radius: 50%;
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin-bottom: 20px; 
+  align-items: center;
 }
 
 /* skills */
