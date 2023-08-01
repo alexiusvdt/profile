@@ -7,7 +7,7 @@ function AboutMe({ title, subtitle, dark, id }) {
     <>
       <div className={"section" + (dark ? " section-dark" : "")}>
         <div className="section-content" id={id}>
-        <h1>{title}</h1>
+        <h1>{title}</h1> <br />
         <img src={Headshot} width={250} height={300} alt="My headshot"/>
       
       </div>

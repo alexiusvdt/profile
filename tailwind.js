@@ -4,7 +4,7 @@ module.exports = {
     // relative: true,
     files: [
       "./public/index.html",
-      "./src/**/*.{js}",
+      "./src/*/*.{js}",
       // "./src/components/**.{js}",
     ],
   },

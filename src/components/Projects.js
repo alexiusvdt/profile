@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import { projects } from '../config';
 import { Tilt } from 'react-tilt';
 
@@ -21,7 +21,7 @@ import { Tilt } from 'react-tilt';
 
   return (
     <Tilt options={defaultOptions}>
-      <div className="w-72 md:w-80 mx-4 bg-white rounded-lg overflow-hidden h-auto max-h-96 shadow-lg py-5" key={i}>
+      <div className="project-card" key={i}>
         <div className="p-4">
           <h3 className="text-lg font-bold text-black mb-2">{projects.name}</h3>
           <p className="text-blue-400 text-sm">{projects.features}</p>
@@ -39,7 +39,7 @@ import { Tilt } from 'react-tilt';
 function Projects({ title, subtitle, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
-      <div className="section-content" id={id}>
+      <div className="flex justify-center items-center h-screen" id={id}>
       <h1>{title}</h1>
         <div className="flex flex-wrap justify-center items-center">
         {projects.map(renderCard)}

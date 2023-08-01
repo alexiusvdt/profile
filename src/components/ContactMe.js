@@ -44,7 +44,7 @@ function ContactMe({ title, subtitle, dark, id }) {
     <>
     <Toaster position="top-center" />
       <div className={"section" + (dark ? " section-dark" : "")}>
-          <div className="section-content" id={id}>
+          <div className="project-card-container" id={id}>
           < h1>{title}</h1>
           <div>
             <h3 className="text-center text-white box-border px-10 pb-10 pt-25">Hey, drop me a line!</h3>

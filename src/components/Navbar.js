@@ -4,7 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import blackcat from "../img/black_cat.png";
 import whitecat from "../img/white_cat.png";
 const Navbar = (props) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const controlNavbar = () => {
     if(window.scrollY > 20){
       setShow(true);

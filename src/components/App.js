@@ -15,7 +15,7 @@ import Skills from "./Skills";
 
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   function toggleDarkMode() {
     setDarkMode(prevDarkMode => !prevDarkMode)
