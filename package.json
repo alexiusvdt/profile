@@ -15,6 +15,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/three": "^0.152.1",
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "cors": "^2.8.5",
     "framer-motion": "^10.2.3",

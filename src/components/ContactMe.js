@@ -44,17 +44,17 @@ function ContactMe({ title, subtitle, dark, id }) {
     <>
     <Toaster position="top-center" />
       <div className={"section" + (dark ? " section-dark" : "")}>
-          <div className="project-card-container" id={id}>
+          <div className="section-content" id={id}>
           < h1>{title}</h1>
           <div>
-            <h3 className="text-center text-white box-border px-10 pb-10 pt-25">Hey, drop me a line!</h3>
-            <div className="w-96 mx-auto text-white">
+            <h3 className="text-center box-border px-10 pb-10 pt-25">Hey, drop me a line!</h3>
+            <div className="w-96 mx-auto">
               <form className="flex flex-col items-start w-full text-base" ref={form} onSubmit={sendEmail}>
                 <input className="w-full h-9 px-3 text-black rounded-md border border-gray-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500" type="text" placeholder="Enter your email" name="user_email" />
                 <input className="w-full h-9 px-3 text-black rounded-md border border-gray-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500" type="text" placeholder="Enter your name" name="user_name" />
                 <textarea className="w-full h-32 px-3 py-2 mt-2 text-black rounded-md border border-gray-300 focus:border-teal-500 focus:ring-1 focus:ring-teal-500" placeholder="Enter your message" name="message" />
                 {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
-                <button className="mt-4 cursor-pointer bg-orange-500 text-white py-2 px-4 rounded" type="submit" disabled={isLoading}>{isLoading ? 'Sending...' : 'Send it!'}</button>
+                <button className="mt-4 cursor-pointer bg-orange-500 py-2 px-4 rounded" type="submit" disabled={isLoading}>{isLoading ? 'Sending...' : 'Send it!'}</button>
               </form>
             </div>
           </div>

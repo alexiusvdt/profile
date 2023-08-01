@@ -39,9 +39,9 @@ import { Tilt } from 'react-tilt';
 function Projects({ title, subtitle, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
-      <div className="flex justify-center items-center h-screen" id={id}>
+      <div className="section-content" id={id}>
       <h1>{title}</h1>
-        <div className="flex flex-wrap justify-center items-center">
+        <div className="">
         {projects.map(renderCard)}
         </div>
       </div>

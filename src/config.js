@@ -48,4 +48,12 @@ module.exports = {
       features: '.NET6, SQL',
     },
   ],
+
+  skills: [
+    {
+      languages: 'Javascript, C#, Python',
+      frameworks: 'ionic, tailwind, framer-motion, django, flask',
+      libraries: 'reactjs, jquery, node.js, vue.js, webpack, typescript, bootstrap',
+    },
+  ],
 };
