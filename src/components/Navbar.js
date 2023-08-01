@@ -1,16 +1,28 @@
 /* eslint-disable */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import blackcat from "../img/black_cat.png";
 import whitecat from "../img/white_cat.png";
 const Navbar = (props) => {
-
-  const scrollToTop = () => {
-  scroll.scrollToTop();
+  const [show, setShow] = useState(false);
+  const controlNavbar = () => {
+    if(window.scrollY > 20){
+      setShow(true);
+    } else {
+      setShow(false);
+    }
   };
 
-  return (
-      <nav className="nav" id="navbar" >
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+    };
+
+  useEffect(() => {window.addEventListener('scroll', controlNavbar);
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, []);
+    return <div className={`nav ${show && 'nav-static'} id="navbar`}>
         <div className="nav-content">
           <div className="flex flex-shrink-0 items-center">
           { props.darkMode ?
@@ -89,21 +101,10 @@ const Navbar = (props) => {
                 <div className="slider round"></div>
                 </label>
               </div>
-              {/* <Link
-                activeClass="active"
-                to="section5"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Section 5
-              </Link> */}
             </li>
           </ul>
         </div>
-      </nav>
-    );
-  }
+     </div>
+}
 
 export default Navbar

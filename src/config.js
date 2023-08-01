@@ -48,5 +48,4 @@ module.exports = {
       features: '.NET6, SQL',
     },
   ],
-
 };

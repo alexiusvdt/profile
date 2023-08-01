@@ -1,5 +1,5 @@
 ### My portfolio
-Here's my portfolio. A simple page that shows off myself and my projects. 
+Here's my portfolio. A simple page that shows off myself and my projects. Please view the dev branch to see in progress work.
 
 ## Contents
 [TODO](#TODO)
