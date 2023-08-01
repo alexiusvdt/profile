@@ -1,9 +1,7 @@
 /* eslint-disable  */
 import React from 'react';
 import { config } from '../config';
-import Aos from 'aos';
-
-
+// import Aos from 'aos';
 
 const renderTile = (skills_list) => {
   const i = skills_list.index;
@@ -23,7 +21,7 @@ function Skills({ title, subtitle, dark, id }) {
   <div className={"section" + (dark ? " section-dark" : "")}>
     <div className="section-content" id={id}>
     <h1>{title}</h1>
-    <div className="">
+    <div className="flex items-center gap-2">
         {skills.skills_list.map(renderTile)}
         </div>
     </div>
