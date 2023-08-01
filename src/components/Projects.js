@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import { projects } from '../config';
+import { config } from '../config';
 import { Tilt } from 'react-tilt';
 
   const renderCard = (projects) => {
@@ -42,7 +42,7 @@ function Projects({ title, subtitle, dark, id }) {
       <div className="section-content" id={id}>
       <h1>{title}</h1>
         <div className="">
-        {projects.map(renderCard)}
+        {config.projects.map(renderCard)}
         </div>
       </div>
     </div>

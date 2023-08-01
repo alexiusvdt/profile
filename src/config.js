@@ -1,6 +1,18 @@
-module.exports = {
-  email: 'alex.johnson293@gmail.com',
+/* eslint-disable */
+import js from "./img/javascript.png";
+import py from "./img/python-icon.svg";
+import dockr from "./img/docker.svg";
+import node from "./img/nodejs.svg";
+import dotnet from "./img/dotnet.svg";
+import github from "./img/github.svg";
+import reactlogo from "./img/react.svg";
+import csharp from "./img/csharp.svg";
 
+
+// 1old 
+// module.exports = {
+export const config = {
+  email: 'alex.johnson293@gmail.com',
   socialMedia: [
     {
       name: 'Github',
@@ -15,7 +27,6 @@ module.exports = {
       url: 'https://www.instagram.com/ob.nixillis/',
     },
   ],
-
   projects: [
     {
       name: 'Storefront',
@@ -48,12 +59,55 @@ module.exports = {
       features: '.NET6, SQL',
     },
   ],
-
-  skills: [
-    {
-      languages: 'Javascript, C#, Python',
-      frameworks: 'ionic, tailwind, framer-motion, django, flask',
-      libraries: 'reactjs, jquery, node.js, vue.js, webpack, typescript, bootstrap',
-    },
-  ],
+  skills: {
+    title: "Skills",
+    skills_list: [
+      {
+        name: 'python',
+        subtext: 'placeholder text',
+        logo: py
+      },
+      {
+        name: 'Javascript',
+        subtext: 'placeholder text',
+        logo: js
+      },
+      {
+        name: 'Docker',
+        subtext: 'placeholder text',
+        logo: dockr
+      },
+      {
+        name: 'Nodejs',
+        subtext: 'placeholder text',
+        logo: node
+      },
+      {
+        name: 'C#',
+        subtext: 'placeholder text',
+        logo: csharp
+      },
+      {
+        name: '.NET',
+        subtext: 'placeholder text',
+        logo: dotnet
+      },
+      {
+        name: 'Github',
+        subtext: 'placeholder text',
+        logo: github
+      },
+      {
+        name: 'React',
+        subtext: 'placeholder text',
+        logo: reactlogo
+      },
+      
+      // {
+      //   name: 'Javascript, C#, Python',
+      //   frameworks: 'ionic, tailwind, framer-motion, django, flask' feathersjs,
+      //   libraries: 'reactjs, jquery, node.js, vue.js, webpack, typescript, bootstrap',
+      // },
+    ],
+  }
 };
