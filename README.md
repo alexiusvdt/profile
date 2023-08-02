@@ -2,22 +2,14 @@
 Here's my portfolio. A simple page that shows off myself and my projects. Please view the dev branch to see in progress work.
 
 ## Contents
-[TODO](#TODO)
-
 [Setup](#setup-&-installation)
 
 [Thanks](#thanks)
-[Notes](#notes)
+
 [Known Issues](#known-bugs)
 
 [license](#license)
 
-## TODO
-* complete retrofit
-  * prune old packages
-* overall site styling
-* optimise for mobile
-* remove emailjs & implement my own mail routing
 
 ## Setup & Installation
 * clone this repo
@@ -28,8 +20,6 @@ Here's my portfolio. A simple page that shows off myself and my projects. Please
 
 ## Versions
 1.0 - released 
-
-## Notes
 
 ## Known Bugs
 * some legacy packages are still included & will be removed in further releases
