@@ -33,6 +33,12 @@ export const config = {
       features: 'Django, Python, React, In-progress',
     },
     {
+      name: 'Alien Game',
+      url: 'hhttps://github.com/alexiusvdt/alien-game',
+      blurb: 'A clone of alien invaders, complete with leaderboard and scaling difficulty',
+      features: 'Python',
+    },
+    {
       name: 'Help Queue',
       url: 'https://github.com/alexiusvdt/help-queue-hooks',
       blurb: 'A help ticket queue using React that stores tickets in a firestore database.',
@@ -44,12 +50,7 @@ export const config = {
       blurb: 'An ASP.NET to do list application that stores entries in a SQL database.',
       features: '.NET6, SQL',
     },
-    {
-      name: 'Alien Game',
-      url: 'hhttps://github.com/alexiusvdt/alien-game',
-      blurb: 'A clone of alien invaders, complete with leaderboard and scaling difficulty',
-      features: 'Python',
-    },
+
     {
       name: 'Marquee',
       url: 'https://github.com/alexiusvdt/YourMovieDatabase',
@@ -59,6 +60,7 @@ export const config = {
   ],
   skills: {
     title: "Skills",
+    subtitle: "Here are some of my proficiencies:",
     skills_list: [
       {
         name: 'python',

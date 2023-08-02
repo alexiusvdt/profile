@@ -15,12 +15,13 @@ const renderTile = (skills_list) => {
   );
 };
 
-function Skills({ title, subtitle, dark, id }) {
+function Skills({ title, dark, id }) {
   const { skills } = config;
   return(    
   <div className={"section" + (dark ? " section-dark" : "")}>
     <div className="section-content" id={id}>
-    <h1>{title}<br /></h1>
+    <h1>{title}</h1>
+    {/* <h3>{skills.subtitle}</h3> */}
     <div className="section-content">
         {skills.skills_list.map(renderTile)}
         </div>

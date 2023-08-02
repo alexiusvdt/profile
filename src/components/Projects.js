@@ -23,9 +23,9 @@ import { Tilt } from 'react-tilt';
     <Tilt options={defaultOptions}>
       <div className="project-card" key={i}>
         <div className="p-4">
-          <h3 className="text-lg font-bold text-black mb-2">{projects.name}</h3>
-          <p className="text-blue-400 text-sm">{projects.features}</p>
-          <p className="text-gray-700">{projects.blurb}</p>          
+          <h2 className="">{projects.name}</h2>
+          <p className="">{projects.features}</p>
+          <p className="">{projects.blurb}</p>          
           <button type="submit" className="bg-gray-800 text-white px-4 py-2 rounded-lg mt-4" onClick={() => window.open(projects.url, '_blank')}>
             View on GitHub
           </button>

@@ -6,9 +6,11 @@
   --clr-text-dark: #1f2937; /* gray-200 */
   --clr-text-light: #fafafa; /* zinc-50 */
 
-  min-height: 100%;
-  min-width: 100%;
-
+  height: 100vh;
+  width: 100vw;
+  /* min-height: 100%;
+  min-width: 100%; */
+  font-family: monospace;
 }
 
 .dark {
@@ -83,6 +85,7 @@
 
 .section-content {
   padding-left: 15%;
+  padding-right: 15%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -167,16 +170,15 @@ border-radius: 50%;
   flex-direction: row;
   width: 100vw;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
-  align-items: center;
 }
 
 .project-card {
-  width: 500px; 
+  width: 200px; 
   padding: 20px; 
   background-color: #836666;
-  justify-content: space-around;
+  justify-content:center;
   border-radius: 8px;
+  border: 1px solid #ccc;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin-bottom: 20px; 
   align-items: center;
@@ -184,23 +186,73 @@ border-radius: 50%;
 
 /* skills */
 
-/* the overall skill container */
-
-/* #343434; */
+/* the overall skill container is a section-content */
 /* the individual element (python, jscript, etc */
 .skill-card {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex: 1 0 calc(33.33% - 20px); */
-  width: 100px; 
+  width: 150px; 
   padding: 20px; 
   background-color: #836666;
   border-radius: 8px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin-bottom: 20px; 
- 
-  /* justify-content: space-between; */
 }
 
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  /* padding-left: 15%; */
+}
+
+/* contactme */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem
+}
+
+.input {
+  height: 2.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  border-color: #ccc;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #38b2ac;
+  box-shadow: 0 0 0 2px #38b2ac;
+}
+
+.textarea {
+  height: 8rem;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  border-color: #ccc;
+  outline: none;
+}
+
+.email-button {
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: #f97316;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+
+.email-button:hover,
+.email-button:focus {
+  background-color: #fca788;
+}
