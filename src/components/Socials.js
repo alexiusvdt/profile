@@ -6,12 +6,12 @@ import { Icon } from './icons/icon';
   const {socialMedia} = config
 
 const Socials = () => (
-  <div className="fixed bottom-0 left-0 flex flex-row items-center">
-    <ul className="flex flex-row items-center m-5 p-5 list-none">  
+  <div className="socials-container">
+    <ul className="socials-list">  
       {socialMedia &&
         socialMedia.map(( {url, name}, i) => (
-          <ul key={i} className="after:block after:w-5 after:h-90 after:m-auto after:bg-gray-600 hover:focus:translate-y-5" style={{height: 40, width: 40}}>
-            <a href={url} aria-label={name} target="_blank" rel="noreferrer" className="p-3">
+          <ul key={i} className="social-link" style={{height: 30, width: 30}}>
+            <a href={url} aria-label={name} target="_blank" rel="noreferrer" className="icon">
               <Icon name={name} />
             </a>
           </ul>

@@ -7,6 +7,7 @@ import dotnet from "./img/dotnet.svg";
 import github from "./img/github.svg";
 import reactlogo from "./img/react.svg";
 import csharp from "./img/csharp.svg";
+import api from "./img/api.svg";
 
 
 export const config = {
@@ -101,6 +102,11 @@ export const config = {
         name: 'React',
         subtext: 'placeholder text',
         logo: reactlogo
+      },
+      {
+        name: 'APIs',
+        subtext: 'lorem ipsum lorem ipsum',
+        logo: api
       },
       
       // {

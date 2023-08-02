@@ -75,11 +75,7 @@ const App = () => {
           darkMode={darkMode} 
           id="contactme"
       />
-        <footer className="p-3 text-center">
-        {/* <h6 className="mb-3">Alex Johnson</h6> */}
-        <p>Thanks for stopping by!</p>
-        <Socials />
-      </footer>
+      <Socials />
     </div>
   )
 }
