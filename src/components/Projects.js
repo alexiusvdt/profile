@@ -39,7 +39,7 @@ import { Tilt } from 'react-tilt';
 function Projects({ title, subtitle, dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
-      <div className="" id={id}>
+      <div className="section-content" id={id}>
       <h1>{title}</h1>
         <div className="section-content">
         {config.projects.map(renderCard)}
