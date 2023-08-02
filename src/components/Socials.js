@@ -3,9 +3,23 @@ import React from 'react';
 import { config } from '../config';
 import { Icon } from './icons/icon';
 
-  const {socialMedia} = config
+const {socialMedia} = config
 
-const Socials = () => (
+const Socials = (dark) => (
+  // if (!dark) {
+  //   let style = {
+  //     height: 30,
+  //     width: 30,
+  //     filter: invert(100)
+  //   }
+  // } else {
+  //   let style = {
+  //     height: 30,
+  //     width: 30,
+  //     filter: invert(0)
+  //     }
+  // return style
+  // }
   <div className="socials-container">
     <ul className="socials-list">  
       {socialMedia &&

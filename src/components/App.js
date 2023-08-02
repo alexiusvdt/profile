@@ -75,7 +75,10 @@ const App = () => {
           darkMode={darkMode} 
           id="contactme"
       />
-      <Socials />
+      <Socials 
+          darkMode={darkMode}
+          id="socials"
+      />
     </div>
   )
 }

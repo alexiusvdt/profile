@@ -1,3 +1,10 @@
+.body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: orangered;
+}
+
 :root {
   /* bg/text settings for dark/light options */
   --clr-bg-dark: #1f2937; /* gray-800 */
@@ -6,14 +13,9 @@
   --clr-text-dark: #1f2937; /* gray-200 */
   --clr-text-light: #fafafa; /* zinc-50 */
 
-  height: 100vh;
-  width: 100vw;
-  font-family: monospace;
+  font-family: inconsolata, monospace;
 }
 
-.body {
-  margin: 0;
-}
 
 .dark {
   background-color: var(--clr-bg-dark);
@@ -36,6 +38,7 @@
   transition-timing-function: ease-in;
   transition: 0.5s;
   top: -80px;
+  z-index: 1;
 }
 
 .nav-static {

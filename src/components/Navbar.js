@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import blackcat from "../img/black_cat.png";
 import whitecat from "../img/white_cat.png";
+
 const Navbar = (props) => {
   const [show, setShow] = useState(false);
   const controlNavbar = () => {
@@ -22,6 +23,7 @@ const Navbar = (props) => {
       window.removeEventListener('scroll', controlNavbar);
     };
   }, []);
+
     return <div className={`nav ${show && 'nav-static'} id="navbar`}>
         <div className="nav-content">
           <div className="flex flex-shrink-0 items-center object-cover">

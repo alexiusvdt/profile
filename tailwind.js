@@ -308,6 +308,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      'inconsolata': ['inconsolata', 'monospace'],
       sans: [
         'ui-sans-serif',
         'system-ui',

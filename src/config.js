@@ -64,7 +64,7 @@ export const config = {
     subtitle: "Here are some of my proficiencies:",
     skills_list: [
       {
-        name: 'python',
+        name: 'Python',
         subtext: 'placeholder text',
         logo: py
       },
