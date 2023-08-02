@@ -11,7 +11,7 @@ const renderTile = (skills_list) => {
       <h2>{skills_list.name}</h2>
       <p>{skills_list.subtext}</p>
       <img src={skills_list.logo}/>
-      </div>
+    </div>
   );
 };
 
@@ -19,9 +19,9 @@ function Skills({ title, subtitle, dark, id }) {
   const { skills } = config;
   return(    
   <div className={"section" + (dark ? " section-dark" : "")}>
-    <div className="section-content" id={id}>
+    <div className="align-center" id={id}>
     <h1>{title}</h1>
-    <div className="flex items-center gap-2">
+    <div className="section-content">
         {skills.skills_list.map(renderTile)}
         </div>
     </div>

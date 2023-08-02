@@ -103,7 +103,7 @@ export const config = {
       
       // {
       //   name: 'Javascript, C#, Python',
-      //   frameworks: 'ionic, tailwind, framer-motion, django, flask' feathersjs,
+      //   frameworks: 'ionic, tailwind, framer-motion, django, flask' feathersjs, formik
       //   libraries: 'reactjs, jquery, node.js, vue.js, webpack, typescript, bootstrap',
       // },
     ],
