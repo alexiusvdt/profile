@@ -6,8 +6,9 @@ import whitecat from "../img/white_cat.png";
 
 const Navbar = (props) => {
   const [show, setShow] = useState(false);
+  
   const controlNavbar = () => {
-    if(window.scrollY > 20){
+    if (window.scrollY > 20){
       setShow(true);
     } else {
       setShow(false);
@@ -34,6 +35,7 @@ const Navbar = (props) => {
             className="block h-8 w-auto lg:hidden"
             alt="logo"
             onClick={scrollToTop}
+            title="back to top"
           />
           :
           <img 
@@ -42,6 +44,7 @@ const Navbar = (props) => {
             className="block h-8 w-auto lg:hidden"
             alt="logo"
             onClick={scrollToTop}
+            title="back to top"
           />
         }
           </div>
@@ -97,7 +100,7 @@ const Navbar = (props) => {
               </Link>
             </li>
             <li className="nav-item">
-              <div className="switch">
+              <div className="switch" title="toggle dark/light">
                 <label className="theme-switch" htmlFor="checkbox">
                 <input type="checkbox" id="checkbox" onClick={props.toggleDarkMode} />
                 <div className="slider round"></div>

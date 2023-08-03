@@ -90,7 +90,7 @@ div#root {
   column-gap: 10px;
   justify-content: center space-evenly;
   /* align-items: center; */
-  flex: 1 0 calc(33.33% - 20px);
+  /* flex: 1 0 calc(33.33% - 20px); */
 }
 
 .nav-item > .active {
@@ -169,10 +169,11 @@ border-radius: 50%;
   flex-wrap: wrap;
 }
 
+/* #836666 */
 .project-card {
   width: 200px; 
   padding: 20px; 
-  background-color: #836666;
+  background-color: #006AFF;
   justify-content:center;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -186,13 +187,17 @@ border-radius: 50%;
 /* the overall skill container is a section-content */
 /* the individual element (python, jscript, etc */
 .skill-card {
-  width: 150px; 
-  padding: 20px; 
-  background-color: #836666;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px; 
+  height: 150px;
+  padding: 10px; 
+  background-color: #006AFF;
   border-radius: 8px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  margin-bottom: 20px; 
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* contactme */

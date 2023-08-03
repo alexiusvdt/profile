@@ -20,7 +20,7 @@ const renderCard = (projects) => {
   return (
     <Tilt options={defaultOptions}>
       <div className="project-card" key={i}>
-        <div className="p-4">
+        <div className="">
           <h2 className="">{projects.name}</h2>
           <p className="">{projects.features}</p>
           <p className="">{projects.blurb}</p>

@@ -7,13 +7,17 @@ function AboutMe({ dark, id }) {
       <section id={id} className="section-content">
         <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
           <div
-            data-aos="slide-left"
+            data-aos="fade-up-left"
             data-aos-delay="1200"
-            className="absolute h-full md:w-4/12 w-8/12 top-0 right-50 bottom-0 -z-10"
+            className="absolute h-full md:w-4/12 w-8/12 top-0 right-100 bottom-0 -z-10"
           >
             <h1 className="absolute top-50 left-50">Alex Johnson</h1>
           </div>
-          <div className="pb-16 px-6 pt-5" data-aos="fade-down">
+          <div
+            className="pb-16 px-6 pt-5"
+            data-aos="fade-down-right"
+            data-aos-delay="1200"
+          >
             <h2>Developer</h2>
             <br />
             <div className="">

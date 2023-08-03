@@ -1,5 +1,5 @@
 /* eslint-disable */
-import js from "./img/javascript.png";
+import js from "./img/javascript.svg";
 import py from "./img/python-icon.svg";
 import dockr from "./img/docker.svg";
 import node from "./img/nodejs.svg";
@@ -8,7 +8,9 @@ import github from "./img/github.svg";
 import reactlogo from "./img/react.svg";
 import csharp from "./img/csharp.svg";
 import api from "./img/api.svg";
-
+import cicd from './img/cicd.svg';
+import tail from './img/tailwind.svg';
+import linux from './img/linux.svg';
 
 export const config = {
   email: 'alex.johnson293@gmail.com',
@@ -65,49 +67,65 @@ export const config = {
     skillsList: [
       {
         name: 'Python',
-        subtext: 'placeholder text',
+        // subtext: 'placeholder text',
         logo: py
       },
       {
         name: 'Javascript',
-        subtext: 'placeholder text',
+        // subtext: 'placeholder text',
         logo: js
       },
       {
         name: 'Docker',
-        subtext: 'placeholder text',
+        // subtext: 'placeholder text',
         logo: dockr
       },
       {
         name: 'Nodejs',
-        subtext: 'placeholder text',
+        // subtext: 'placeholder text',
         logo: node
       },
       {
         name: 'C#',
-        subtext: 'placeholder text',
+        // subtext: 'placeholder text',
         logo: csharp
       },
       {
         name: '.NET',
-        subtext: 'placeholder text',
+        // subtext: 'placeholder text',
         logo: dotnet
       },
       {
         name: 'Github',
-        subtext: 'placeholder text',
+        // subtext: 'placeholder text',
         logo: github
       },
       {
         name: 'React',
-        subtext: 'placeholder text',
+        // subtext: 'placeholder text',
         logo: reactlogo
       },
       {
         name: 'APIs',
-        subtext: 'lorem ipsum lorem ipsum',
+        // subtext: 'lorem ipsum lorem ipsum',
         logo: api
       },
+      {
+        name: 'CI/CD',
+        // subtext:
+        logo: cicd
+      },
+      {
+        name: 'Tailwind',
+        // subtext:
+        logo: tail
+      },
+      {
+        name: 'Linux',
+        // subtext:
+        logo: linux
+      },
+
       
       // {
       //   name: 'Javascript, C#, Python',
