@@ -7,7 +7,7 @@ const IconGithub = () => (
     role="img"
     viewBox="0 0 24 24"
     fill="none"
-    stroke="purple"
+    stroke="black"
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
