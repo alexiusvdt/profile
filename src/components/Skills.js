@@ -3,14 +3,14 @@ import React from 'react';
 import { config } from '../config';
 // import Aos from 'aos';
 
-const renderTile = (skills_list) => {
-  const i = skills_list.index;
+const renderTile = (skillsList) => {
+  const i = skillsList.index;
   
   return (
     <div data-aos="flip-left" className='skill-card'>
-      <h2>{skills_list.name}</h2>
-      <p>{skills_list.subtext}</p>
-      <img src={skills_list.logo}/>
+      <h2>{skillsList.name}</h2>
+      <p>{skillsList.subtext}</p>
+      <img src={skillsList.logo}/>
     </div>
   );
 };
@@ -23,7 +23,7 @@ function Skills({ title, dark, id }) {
     <h1>{title}</h1>
     {/* <h3>{skills.subtitle}</h3> */}
     <div className="section-content">
-        {skills.skills_list.map(renderTile)}
+        {skills.skillsList.map(renderTile)}
         </div>
     </div>
   </div>

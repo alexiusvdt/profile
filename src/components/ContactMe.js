@@ -1,9 +1,8 @@
-/* eslint-disable  */
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
-function ContactMe({ title, subtitle, dark, id }) {
+function ContactMe({ title, dark, id }) {
   const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
 
@@ -27,7 +26,7 @@ function ContactMe({ title, subtitle, dark, id }) {
         error: 'Failed to send',
       },
     );
-      // laterbase:
+    // laterbase:
     // checkValidEmail(form.user_email.value); emailjs should validate, but maybe include a confirmation field
     emailjs.sendForm(
       process.env.REACT_APP_SERVICE_ID,
@@ -42,14 +41,14 @@ function ContactMe({ title, subtitle, dark, id }) {
 
   return (
     <>
-    <Toaster position="top-center" />
-      <div className={"section" + (dark ? " section-dark" : "")}>
-          <div className="contact-me" id={id}>
-          < h1>{title}</h1>
+      <Toaster position="top-center" />
+      <div className={`${dark} ? 'section-dark' : `}>
+        <div className="contact-me" id={id}>
+          <h1>{title}</h1>
           <div>
-            {/* className="text-center box-border px-10 pb-10 pt-25" */}
-            <h3>I'll get back to you ASAP!</h3>
-            {/* w-96 mx-auto */}
+            {/* formerly className="text-center box-border px-10 pb-10 pt-25" */}
+            <h3>I&apos;ll get back to you ASAP!</h3>
+            {/* formerly w-96 mx-auto */}
             <div className="">
               <form className="form" ref={form} onSubmit={sendEmail}>
                 <input className="input" type="text" placeholder="Enter your email" name="user_email" />

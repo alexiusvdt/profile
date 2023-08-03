@@ -35,7 +35,7 @@ export const config = {
     },
     {
       name: 'Alien Game',
-      url: 'hhttps://github.com/alexiusvdt/alien-game',
+      url: 'https://github.com/alexiusvdt/alien-game',
       blurb: 'A clone of alien invaders, complete with leaderboard and scaling difficulty',
       features: 'Python',
     },
@@ -62,7 +62,7 @@ export const config = {
   skills: {
     title: "Skills",
     subtitle: "Here are some of my proficiencies:",
-    skills_list: [
+    skillsList: [
       {
         name: 'Python',
         subtext: 'placeholder text',
