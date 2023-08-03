@@ -6,7 +6,12 @@ const renderTile = (skillsList) => {
   const i = skillsList.index;
   
   return (
-    <div data-aos="flip-left" className='skill-card' id={i}>
+    <div
+      data-aos="flip-left"
+      className='skill-card'
+      id={i}
+      data-aos-duration='700'
+    >
       <h2>{skillsList.name}</h2>
       <p>{skillsList.subtext}</p>
       <img src={skillsList.logo}/>

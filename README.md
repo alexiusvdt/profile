@@ -1,5 +1,5 @@
 ### My portfolio
-Here's my portfolio. A simple page that shows off myself and my projects. Please view the dev branch to see in progress work.
+Here's my portfolio. A simple page that shows off myself and my projects. Please view the dev branch to see any in progress work.
 
 ## Contents
 [Setup](#setup-&-installation)
@@ -18,14 +18,10 @@ Here's my portfolio. A simple page that shows off myself and my projects. Please
 * run `npm run build` & it should open in your browser
     * if it doesn't auto-open a tab, open a browser of your choice & navigate to `localhost:3000`
 
-## Versions
-1.0 - released 
-
 ## Known Bugs
 * some legacy packages are still included & will be removed in further releases
 
 ## Thanks
-* Background image by <a href="https://www.freepik.com/free-vector/abstract-technological-background_13182208.htm#query=technology%20background&position=25&from_view=keyword&track=ais">Freepik</a>
 
 ## License
 
