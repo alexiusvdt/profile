@@ -7,7 +7,7 @@ const IconInstagram = () => (
     role="img"
     viewBox="0 0 24 24"
     fill="none"
-    stroke="white"
+    stroke="black"
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"

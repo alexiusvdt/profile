@@ -46,7 +46,6 @@ function App() {
     <div className={`flex container justify-center items-center h-screen p-4 h-full w-full mx-auto py-2 
                     ${darkMode ? 'dark' : 'light'}`}
     >
-      {/* <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10"> */}
       <Navbar
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode} // eslint-disable-line
