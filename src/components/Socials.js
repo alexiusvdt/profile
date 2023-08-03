@@ -1,23 +1,43 @@
 /*eslint-disable*/
 import React from 'react';
-import { socialMedia } from '../config';
+import { config } from '../config';
 import { Icon } from './icons/icon';
 
-const Socials = () => (
-  <div className="fixed bottom-0 left-0 flex flex-row items-center">
-    <ul className="flex flex-row items-center m-5 p-5 list-none">
-      
+const {socialMedia} = config
+
+function Socials({ darkMode }) {
+// const Socials = (darkMode) => (
+  // if (!dark) {
+  //   let style = {
+  //     height: 30,
+  //     width: 30,
+  //     filter: invert(100)
+  //   }
+  // } else {
+  //   let style = {
+  //     height: 30,
+  //     width: 30,
+  //     filter: invert(0)
+  //     }
+  // return style
+  // }
+  return (
+  <div className="socials-container">
+    <ul className="socials-list">  
       {socialMedia &&
         socialMedia.map(( {url, name}, i) => (
-          <li key={i} className="after:block after:w-5 after:h-90 after:m-auto after:bg-gray-600 hover:focus:translate-y-5">
-            <a href={url} aria-label={name} target="_blank" rel="noreferrer" className="p-3">
-              <Icon name={name} />
+          <ul key={i} className="social-link" style={{height: 30, width: 30}}>
+            <a href={url} aria-label={name} target="_blank" rel="noreferrer" className="icon">
+              <Icon
+                name={name}
+                dark={darkMode}
+              />
             </a>
-          </li>
+          </ul>
         ))}
     </ul>
   </div>
-);
+  );
+}
 
 export default Socials;
-

@@ -1,6 +1,19 @@
-module.exports = {
-  email: 'alex.johnson293@gmail.com',
+/* eslint-disable */
+import js from "./img/javascript.svg";
+import py from "./img/python-icon.svg";
+import dockr from "./img/docker.svg";
+import node from "./img/nodejs.svg";
+import dotnet from "./img/dotnet.svg";
+import github from "./img/github.svg";
+import reactlogo from "./img/react.svg";
+import csharp from "./img/csharp.svg";
+import api from "./img/api.svg";
+import cicd from './img/cicd.svg';
+import tail from './img/tailwind.svg';
+import linux from './img/linux.svg';
 
+export const config = {
+  email: 'alex.johnson293@gmail.com',
   socialMedia: [
     {
       name: 'Github',
@@ -15,13 +28,18 @@ module.exports = {
       url: 'https://www.instagram.com/ob.nixillis/',
     },
   ],
-
   projects: [
     {
-      name: 'Learning Log',
-      url: "https://github.com/alexiusvdt/profile.git",
-      blurb: "CRUD application for storing notes & associated items",
-      features: 'python, django',
+      name: 'Storefront',
+      url: 'https://github.com/alexiusvdt/storefront',
+      blurb: 'A virtual store with database, queryable endpoints, and react front end',
+      features: 'Django, Python, React, In-progress',
+    },
+    {
+      name: 'Alien Game',
+      url: 'https://github.com/alexiusvdt/alien-game',
+      blurb: 'A clone of alien invaders, complete with leaderboard and scaling difficulty',
+      features: 'Python',
     },
     {
       name: 'Help Queue',
@@ -35,12 +53,7 @@ module.exports = {
       blurb: 'An ASP.NET to do list application that stores entries in a SQL database.',
       features: '.NET6, SQL',
     },
-    {
-      name: "Avery's Organics",
-      url: 'https://github.com/alexiusvdt/farmers-market',
-      blurb: 'A client for users to view what and where Avery will be selling their produce based on a given date',
-      features: 'Javascript, React',
-    },
+
     {
       name: 'Marquee',
       url: 'https://github.com/alexiusvdt/YourMovieDatabase',
@@ -48,4 +61,77 @@ module.exports = {
       features: '.NET6, SQL',
     },
   ],
+  skills: {
+    title: "Skills",
+    subtitle: "Here are some of my proficiencies:",
+    skillsList: [
+      {
+        name: 'Python',
+        // subtext: 'placeholder text',
+        logo: py
+      },
+      {
+        name: 'Javascript',
+        // subtext: 'placeholder text',
+        logo: js
+      },
+      {
+        name: 'Docker',
+        // subtext: 'placeholder text',
+        logo: dockr
+      },
+      {
+        name: 'Nodejs',
+        // subtext: 'placeholder text',
+        logo: node
+      },
+      {
+        name: 'C#',
+        // subtext: 'placeholder text',
+        logo: csharp
+      },
+      {
+        name: '.NET',
+        // subtext: 'placeholder text',
+        logo: dotnet
+      },
+      {
+        name: 'Github',
+        // subtext: 'placeholder text',
+        logo: github
+      },
+      {
+        name: 'React',
+        // subtext: 'placeholder text',
+        logo: reactlogo
+      },
+      {
+        name: 'APIs',
+        // subtext: 'lorem ipsum lorem ipsum',
+        logo: api
+      },
+      {
+        name: 'CI/CD',
+        // subtext:
+        logo: cicd
+      },
+      {
+        name: 'Tailwind',
+        // subtext:
+        logo: tail
+      },
+      {
+        name: 'Linux',
+        // subtext:
+        logo: linux
+      },
+
+      
+      // {
+      //   name: 'Javascript, C#, Python',
+      //   frameworks: 'ionic, tailwind, framer-motion, django, flask' feathersjs, formik
+      //   libraries: 'reactjs, jquery, node.js, vue.js, webpack, typescript, bootstrap',
+      // },
+    ],
+  }
 };

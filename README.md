@@ -1,42 +1,14 @@
 ### My portfolio
-Here's my portfolio. A simple page that shows off myself and my projects. 
-
+Here's my portfolio. A simple page that shows off myself and my projects. Please view the dev branch to see any in progress work.
 
 ## Contents
-[TODO](#TODO)
-
-[Done](#done)
-
 [Setup](#setup-&-installation)
-
-[New tech](#new-tech)
 
 [Thanks](#thanks)
 
+[Known Issues](#known-bugs)
+
 [license](#license)
-
-## TODO
-* overall site styling
-* optimise for mobile
-* make content more dynamic
-* add better loading animations
-* remove emailjs & implement my own mail routing
-* add biking section or other personal interest sections w/maps?
-
-
-## Done
-~~* bootstrap it~~
-~~* set up component framework~~
-~~* establish page control~~
-~~* add a splashy main page (some kind of animation)~~
-~~* add/style sidebar links~~
-~~* add socials quicklinks to sidebar~~
-~~* add email sent confirmation on formsbubmit~~
-~~* add animations~~
-~~* host it~~
-* V1.0  deployed
-~~* implement better styling tools~~
-~~* improve routing~~
 
 
 ## Setup & Installation
@@ -46,24 +18,10 @@ Here's my portfolio. A simple page that shows off myself and my projects.
 * run `npm run build` & it should open in your browser
     * if it doesn't auto-open a tab, open a browser of your choice & navigate to `localhost:3000`
 
-
-## notes/reminders:
-* .env must be in the root folder & vars prefixed with REACT_APP_, all in caps
-
-## New tech:
-- emailjs
-- framer motion
-- tailwindcss
-- react tilt
-- react hot toast 
-## Versions
-1.0 - released 
-
 ## Known Bugs
-* routing not functional in hamburger menu mode
+* some legacy packages are still included & will be removed in further releases
 
 ## Thanks
-* Background image by <a href="https://www.freepik.com/free-vector/abstract-technological-background_13182208.htm#query=technology%20background&position=25&from_view=keyword&track=ais">Freepik</a>
 
 ## License
 

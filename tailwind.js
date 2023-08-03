@@ -1,10 +1,15 @@
-// this is the default theme from https://tailwindcss.com/docs/theme
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  // tailwind must know about every single file in the project that contains any class names
-  content: ['./src/**/*.{html,js}'],
+  content: {
+    // relative: true,
+    files: [
+      "./public/index.html",
+      "./src/*/*.{js}",
+      // "./src/components/**.{js}",
+    ],
+  },
   presets: [],
-  darkMode: 'media', // or 'class'
-  // theme holds customizations for screens, colors, and spacing as well as core plugins
+  darkMode: 'class', // or 'media' for OS default
   theme: {
     accentColor: ({ theme }) => ({
       ...theme('colors'),
@@ -18,6 +23,7 @@ module.exports = {
       bounce: 'bounce 1s infinite',
     },
     aria: {
+      busy: 'busy="true"',
       checked: 'checked="true"',
       disabled: 'disabled="true"',
       expanded: 'expanded="true"',
@@ -302,6 +308,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      'inconsolata': ['inconsolata', 'monospace'],
       sans: [
         'ui-sans-serif',
         'system-ui',
@@ -991,3 +998,4 @@ module.exports = {
   },
   plugins: [],
 }
+
