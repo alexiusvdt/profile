@@ -1,5 +1,5 @@
 ### My portfolio
-Here's my portfolio. A simple page that shows off myself and my projects. Please view the dev branch to see any in progress work.
+Here's my portfolio: a simple page that shows off myself and my projects. Please view the dev branch to see any in progress work.
 
 ## Contents
 [Setup](#setup-&-installation)
@@ -10,8 +10,10 @@ Here's my portfolio. A simple page that shows off myself and my projects. Please
 
 [license](#license)
 
+## Live Site
+[Portfolio page](https://profile-appn.vercel.app/)
 
-## Setup & Installation
+## Local Setup & Installation
 * clone this repo
 * navigate into the project directory & open a command line
 * run `npm install` to install necessary dependencies
