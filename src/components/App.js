@@ -8,12 +8,6 @@ import Navbar from './Navbar';
 import Skills from './Skills';
 import Socials from './Socials';
 
-// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-// testing
-// import Section from "./Section";
-// laterbase
-// // import Socials from "./Socials";
-
 function App() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -48,7 +42,7 @@ function App() {
     >
       <Navbar
         darkMode={darkMode}
-        toggleDarkMode={toggleDarkMode} // eslint-disable-line
+        toggleDarkMode={toggleDarkMode} 
       />
       <AboutMe
         title="About Me"
