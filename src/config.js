@@ -30,10 +30,10 @@ export const config = {
   ],
   projects: [
     {
-      name: 'Storefront',
-      url: 'https://github.com/alexiusvdt/storefront',
-      blurb: 'A virtual store with database, queryable endpoints, and react front end',
-      features: 'Django, Python, React, In-progress',
+      name: 'Sorting',
+      url: 'https://github.com/alexiusvdt/sorting',
+      blurb: 'Visualize sorting algorithms at work by sending API requests',
+      features: 'Python, Flask, React, In-progress',
     },
     {
       name: 'Alien Game',
@@ -125,13 +125,6 @@ export const config = {
         // subtext:
         logo: linux
       },
-
-      
-      // {
-      //   name: 'Javascript, C#, Python',
-      //   frameworks: 'ionic, tailwind, framer-motion, django, flask' feathersjs, formik
-      //   libraries: 'reactjs, jquery, node.js, vue.js, webpack, typescript, bootstrap',
-      // },
     ],
   }
 };

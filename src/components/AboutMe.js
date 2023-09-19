@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import Headshot from '../img/headshot.png';
 
