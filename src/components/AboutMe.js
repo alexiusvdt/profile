@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import Headshot from '../img/headshot.png';
 
@@ -19,7 +18,7 @@ function AboutMe({ dark, id }) {
             data-aos="fade-down-right"
             data-aos-delay="500"
           >
-            <h2>Developer</h2>
+            <h2>Full-Stack Developer</h2>
             <br />
             <div className="">
               <img
@@ -31,11 +30,11 @@ function AboutMe({ dark, id }) {
               />
             </div>
             <div
-              className='px-6 pt-5 m-auto'
+              className="px-6 pt-5 m-auto"
               data-aos="zoom-in-right"
               data-aos-delay="550"
             >
-              <p>Passionate. Determined. Problem-Solver.</p>
+              <p>Passionate. Unique. Problem-Solver.</p>
             </div>
           </div>
         </div>

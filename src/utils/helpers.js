@@ -1,4 +1,7 @@
 /* eslint-disable */
+
+// deprecated? 
+
 export function debounce(func, wait, immediate) {
 	let timeout;
 	return function() {
