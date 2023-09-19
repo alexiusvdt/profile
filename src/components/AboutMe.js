@@ -30,7 +30,7 @@ function AboutMe({ dark, id }) {
               />
             </div>
             <div
-              className='px-6 pt-5 m-auto'
+              className="px-6 pt-5 m-auto"
               data-aos="zoom-in-right"
               data-aos-delay="550"
             >

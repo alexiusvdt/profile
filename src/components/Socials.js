@@ -26,15 +26,15 @@ function Socials({ darkMode }) {
     <ul className="socials-list">  
       {socialMedia &&
         socialMedia.map(( {url, name}, i) => (
-          <ul key={i} className="social-link" style={{height: 30, width: 30}}>
-            <a href={url} aria-label={name} target="_blank" rel="noreferrer" className="icon">
-              <Icon
-                name={name}
-                dark={darkMode}
-              />
-            </a>
-          </ul>
-        ))}
+      <ul key={i} className="social-link" style={{height: 30, width: 30}}>
+      <a href={url} aria-label={name} target="_blank" rel="noreferrer" className="icon">
+      <Icon
+        name={name}
+        dark={darkMode}
+      />
+      </a>
+      </ul>
+      ))}
     </ul>
   </div>
   );

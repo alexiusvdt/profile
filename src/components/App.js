@@ -42,7 +42,8 @@ function App() {
     >
       <Navbar
         darkMode={darkMode}
-        toggleDarkMode={toggleDarkMode} 
+        // eslint-disable-next-line react/jsx-no-bind
+        toggleDarkMode={toggleDarkMode}
       />
       <AboutMe
         title="About Me"

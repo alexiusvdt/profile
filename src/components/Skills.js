@@ -26,8 +26,8 @@ function Skills({ title, dark, id }) {
         <h1>{title}</h1>
         {/* <h3>{skills.subtitle}</h3> */}
         <div className="section-content">
-            {skills.skillsList.map(renderTile)}
-            </div>
+          {skills.skillsList.map(renderTile)}
+        </div>
       </div>
     </div>
   );
