@@ -105,12 +105,12 @@ div#root {
   width: 3.75em;
   height: 2.125em;
 }
-  
+/* container */
 .theme-switch {
 display: inline-block;
-height: 34px;
+height: 1.5em;
 position: relative;
-width: 60px;
+width: 40px;
 }
 
 .theme-switch input {
@@ -131,8 +131,8 @@ transition: .4s;
 .slider:before {
 background-color: #fff;
 content: "";
-height: 1.625em;
-width: 1.625em;
+height: 1em;
+width: 1em;
 left: 0.25em;
 bottom: 0.25em;
 position: absolute;
@@ -144,9 +144,9 @@ background-color: #8c8a8a;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(1.625em);
-  -ms-transform: translateX(1.625em);
-  transform: translateX(1.625em);
+  -webkit-transform: translateX(1em);
+  -ms-transform: translateX(1em);
+  transform: translateX(1em);
 }
 
 .slider.round {
