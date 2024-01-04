@@ -28,7 +28,7 @@ const Navbar = (props) => {
     return <div className={`nav ${show && 'nav-static'} id="navbar`}>
         <div className="nav-content">
           <div className="flex flex-shrink-0 items-center object-cover">
-          { props.darkMode ?
+          {/* { props.darkMode ?
           <img
             src = {whitecat}
             style={{height: 80, width: 80}}
@@ -46,7 +46,7 @@ const Navbar = (props) => {
             onClick={scrollToTop}
             title="back to top"
           />
-        }
+        } */}
           </div>
           <ul className="nav-items">
             <li className="nav-item">
