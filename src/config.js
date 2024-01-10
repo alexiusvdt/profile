@@ -33,7 +33,7 @@ export const config = {
       name: 'Sorting',
       url: 'https://github.com/alexiusvdt/sorting',
       blurb: 'Visualize sorting algorithms at work by sending API requests',
-      features: 'Python, Flask, React, In-progress',
+      features: 'Python, Flask, React'
     },
     {
       name: 'Alien Game',

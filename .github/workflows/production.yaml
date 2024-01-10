@@ -10,6 +10,17 @@ on:
       - main
 
 jobs:
+  Eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      # can set custom ignore filepath if needed
+      # can also set .eslintignore file
+      
   Deploy-Production:
     runs-on: ubuntu-latest
     steps:

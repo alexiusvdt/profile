@@ -1,5 +1,5 @@
 ### My portfolio
-Here's my portfolio: a simple page that shows off myself and my projects including automated deployments through github. Please view the dev branch to see any in progress work.
+Here's my portfolio: a simple page that shows off myself and my projects including automated deployments on Vercel via github actions. Please view the dev branch to see any in progress work.
 
 ## Contents
 [Setup](#setup-&-installation)
