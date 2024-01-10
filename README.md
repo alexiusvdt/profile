@@ -1,5 +1,5 @@
 ### My portfolio
-Here's my portfolio: a simple page that shows off myself and my projects. Please view the dev branch to see any in progress work.
+Here's my portfolio: a simple page that shows off myself and my projects including automated deployments through github. Please view the dev branch to see any in progress work.
 
 ## Contents
 [Setup](#setup-&-installation)
@@ -15,15 +15,18 @@ Here's my portfolio: a simple page that shows off myself and my projects. Please
 
 ## Local Setup & Installation
 * clone this repo
-* navigate into the project directory & open a command line
+* navigate into the project directory & open a command line interface
 * run `npm install` to install necessary dependencies
-* run `npm run build` & it should open in your browser
+* run `npm run build` followed by `npm run start` & it should open in your browser
     * if it doesn't auto-open a tab, open a browser of your choice & navigate to `localhost:3000`
 
 ## Known Bugs
 * some legacy packages are still included & will be removed in further releases
+* motion causing some issues on mobile devices
 
 ## Thanks
+* Bean - thanks for the endless lap cat debugging
+* B. Fellows // M. Condon - for advice & guidance along the way
 
 ## License
 
