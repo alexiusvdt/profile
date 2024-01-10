@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import blackcat from "../img/black_cat.png";
@@ -28,25 +27,6 @@ const Navbar = (props) => {
     return <div className={`nav ${show && 'nav-static'} id="navbar`}>
         <div className="nav-content">
           <div className="flex flex-shrink-0 items-center object-cover">
-          {/* { props.darkMode ?
-          <img
-            src = {whitecat}
-            style={{height: 80, width: 80}}
-            className="block h-8 w-auto lg:hidden"
-            alt="logo"
-            onClick={scrollToTop}
-            title="back to top"
-          />
-          :
-          <img 
-            src = {blackcat}
-            style={{height: 80, width: 80}}
-            className="block h-8 w-auto lg:hidden"
-            alt="logo"
-            onClick={scrollToTop}
-            title="back to top"
-          />
-        } */}
           </div>
           <ul className="nav-items">
             <li className="nav-item">

@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React from 'react';
 import { config } from '../config';
 import { Icon } from './icons/icon';
