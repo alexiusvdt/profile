@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
-/* eslint-ignore next line */
+// eslint-disable-next-line react/function-component-definition
 const Navbar = (props) => {
   const [show, setShow] = useState(false);
 
@@ -13,7 +13,7 @@ const Navbar = (props) => {
     }
   };
 
-  /* eslint-ignore next line */
+  // eslint-disable-next-line no-unused-vars
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -35,45 +35,44 @@ const Navbar = (props) => {
               <Link
                 activeClass="active"
                 to="aboutme"
-                spy={true}
-                smooth='easeInQuart'
-                offset={-70}
+                spy="true"
+                smooth="easeInQuart"
+                offset={70}
                 duration={500}
               >
-                About Me 
+                About Me
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
                 to="skills"
-                spy={true}
-                smooth={true}
-                offset={-70}
+                spy="true"
+                smooth="true"
+                offset={70}
                 duration={500}
               >
-                Skills              
+                Skills
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
                 to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
+                spy="true"
+                smooth="true"
+                offset={70}
                 duration={500}
               >
                 Projects
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 activeClass="active"
                 to="contactme"
-                spy={true}
-                smooth='linear'
+                spy="true"
+                smooth="linear"
                 offset={-70}
                 duration={500}
                 delay={100}
@@ -84,8 +83,9 @@ const Navbar = (props) => {
             <li className="nav-item">
               <div className="switch" title="toggle dark/light">
                 <label className="theme-switch" htmlFor="checkbox">
-                <input type="checkbox" id="checkbox" onClick={props.toggleDarkMode} />
-                <div className="slider round"></div>
+                  {/* eslint-disable-next-line react/destructuring-assignment */}
+                  <input type="checkbox" id="checkbox" onClick={props.toggleDarkMode} />
+                  <div className="slider round" />
                 </label>
               </div>
             </li>
