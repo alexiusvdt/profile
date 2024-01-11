@@ -25,71 +25,72 @@ const Navbar = (props) => {
   }, []);
 
     return <div className={`nav ${show && 'nav-static'} id="navbar`}>
-        <div className="nav-content">
-          <div className="flex flex-shrink-0 items-center object-cover">
-          </div>
-          <ul className="nav-items">
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="aboutme"
-                spy={true}
-                smooth='easeInQuart'
-                offset={-70}
-                duration={500}
-              >
-                About Me 
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Skills              
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Projects
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="contactme"
-                spy={true}
-                smooth='linear'
-                offset={-70}
-                duration={500}
-                delay={100}
-              >
-                Contact Me
-              </Link>
-            </li>
-            <li className="nav-item">
-              <div className="switch" title="toggle dark/light">
-                <label className="theme-switch" htmlFor="checkbox">
-                <input type="checkbox" id="checkbox" onClick={props.toggleDarkMode} />
-                <div className="slider round"></div>
-                </label>
-              </div>
-            </li>
-          </ul>
+      <div className="nav-content">
+        <div className="flex flex-shrink-0 items-center object-cover">
         </div>
-     </div>
-}
+        <ul className="nav-items">
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="aboutme"
+              spy={true}
+              smooth='easeInQuart'
+              offset={-70}
+              duration={500}
+            >
+              About Me 
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Skills              
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="contactme"
+              spy={true}
+              smooth='linear'
+              offset={-70}
+              duration={500}
+              delay={100}
+            >
+              Contact Me
+            </Link>
+          </li>
+          <li className="nav-item">
+            <div className="switch" title="toggle dark/light">
+              <label className="theme-switch" htmlFor="checkbox">
+              <input type="checkbox" id="checkbox" onClick={props.toggleDarkMode} />
+              <div className="slider round"></div>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      {/* eslint-ignore */}
+  </div>;
+};
 
 export default Navbar;
