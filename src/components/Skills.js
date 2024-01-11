@@ -24,7 +24,6 @@ function Skills({ title, dark, id }) {
     <div className={`${dark} ? 'section-dark' : `}>
       <div className="section-content" id={id}>
         <h1>{title}</h1>
-        {/* <h3>{skills.subtitle}</h3> */}
         <div className="section-content">
           {skills.skillsList.map(renderTile)}
         </div>
