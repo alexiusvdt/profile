@@ -7,10 +7,11 @@ import dotnet from "./img/dotnet.svg";
 import github from "./img/github.svg";
 import reactlogo from "./img/react.svg";
 import csharp from "./img/csharp.svg";
-import api from "./img/api.svg";
+import gis from "./img/gis.svg";
 import cicd from './img/cicd.svg';
 import tail from './img/tailwind.svg';
 import linux from './img/linux.svg';
+import pandas from './img/pandas.svg';
 
 export const config = {
   email: 'alex.johnson293@gmail.com',
@@ -71,58 +72,52 @@ export const config = {
         logo: py
       },
       {
+        name: 'Pandas',
+        logo: pandas
+      },
+      {
         name: 'Javascript',
-        // subtext: 'placeholder text',
         logo: js
       },
       {
         name: 'Docker',
-        // subtext: 'placeholder text',
         logo: dockr
       },
       {
         name: 'Nodejs',
-        // subtext: 'placeholder text',
         logo: node
       },
       {
         name: 'C#',
-        // subtext: 'placeholder text',
         logo: csharp
       },
       {
         name: '.NET',
-        // subtext: 'placeholder text',
         logo: dotnet
       },
       {
         name: 'Github',
-        // subtext: 'placeholder text',
         logo: github
       },
       {
         name: 'React',
-        // subtext: 'placeholder text',
         logo: reactlogo
       },
       {
-        name: 'APIs',
-        // subtext: 'lorem ipsum lorem ipsum',
-        logo: api
+        name: 'GIS',
+        logo: gis
       },
       {
         name: 'CI/CD',
-        // subtext:
         logo: cicd
       },
-      {
-        name: 'Tailwind',
-        // subtext:
-        logo: tail
-      },
+      // {
+      //   name: 'Tailwind',
+      //   // subtext:
+      //   logo: tail
+      // },
       {
         name: 'Linux',
-        // subtext:
         logo: linux
       },
     ],
