@@ -9,7 +9,7 @@ function AboutMe({ dark, id }) {
           <div
             data-aos="fade-up-left"
             data-aos-delay="500"
-            className="absolute h-full md:w-4/12 w-8/12 top-0 right-100 bottom-0 -z-10"
+            className="absolute h-full sm:w-6/12 md:w-4/12 w-8/12 top-0 right-100 bottom-0 -z-10"
           >
             <h1 className="absolute top-50 left-50">Alex Johnson</h1>
           </div>
